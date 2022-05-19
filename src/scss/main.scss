@@ -1,2 +1,4 @@
-@use './structure/style-reset.scss';
-@use './structure/intro-block.scss';
+@use './globals';
+@use './navigation/navigation';
+@use './pages/intro-block';
+@use './pages/description-block';

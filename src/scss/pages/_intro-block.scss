@@ -1,0 +1,253 @@
+@use '../animations/main-title-animation.scss';
+
+.intro-block-frame {
+  background: #fafafa;
+  position: relative;
+}
+
+.intro-block-frame::after {
+  content: '';
+  height: 30px;
+  width: 100%;
+  background: url('../resources/img/paper-border.png');
+  background-size: contain;
+  margin-bottom: -29px;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+}
+
+.intro-block-paddings {
+  padding: 126px 0 100px 0;
+}
+
+.company-title {
+  color: rgb(17, 17, 17);
+  font-family: 'marker';
+  font-size: 4rem;
+  line-height: 40px;
+  letter-spacing: 2px;
+  line-height: 0.9;
+  padding: 50px 0;
+}
+
+.company-title span {
+  font-size: 1.8rem;
+}
+
+.title-upper-part {
+  margin-bottom: 15px;
+  -webkit-align-self: flex-start;
+  align-self: flex-start;
+  --animate-delay: 1s;
+}
+
+.title-middle-part {
+  font-size: 3rem;
+  --animate-delay: 1.5s;
+}
+
+.title-lower-part {
+  -webkit-align-self: flex-end;
+  align-self: flex-end;
+  margin-bottom: 15px;
+  --animate-delay: 2s;
+}
+
+.marker-arrow-box {
+  position: absolute;
+  overflow: hidden;
+  right: 0px;
+  top: 40px;
+}
+
+.marker-arrow {
+  position: relative;
+  width: 100px;
+  height: 110px;
+  left: -105px;
+  opacity: 0;
+  -webkit-animation: marker-arrow 1s;
+  animation: marker-arrow 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 1.5s;
+}
+
+.marker-pencil {
+  position: absolute;
+  height: 90px;
+  z-index: 3;
+  opacity: 0;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  -webkit-animation: marker-pencil 2s;
+  animation: marker-pencil 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 2.5s;
+}
+
+.marker-underline-box {
+  position: absolute;
+  bottom: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  left: 70px;
+  width: 0px;
+  overflow: hidden;
+  animation: marker-stroke 0.6s;
+
+  animation-fill-mode: forwards;
+
+  animation-delay: 3s;
+
+  img {
+    height: 8px;
+
+    width: 100%;
+  }
+}
+
+.intro-block-grid-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.intro-block-description-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  width: fit-content;
+  margin-bottom: 40px;
+}
+
+.title-frame {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  font-family: 'marker';
+  font-size: 80px;
+  line-height: 1;
+  align-items: center;
+  position: relative;
+  justify-self: center;
+  margin-bottom: 76px;
+}
+
+.intro-block-title {
+  margin-bottom: 25px;
+  transition: 0.3s;
+  width: fit-content;
+  font-weight: 700;
+}
+
+.first-title-span {
+  position: relative;
+  transition: 0.3s;
+}
+
+.second-title-span {
+  position: relative;
+  transition: 0.3s;
+}
+
+.third-title-span {
+  position: relative;
+  transition: 0.3s;
+}
+
+.intro-block-subtitle {
+  max-width: 600px;
+}
+
+.intro-block-subtitle span {
+  font-weight: 500;
+  color: rgb(32, 32, 32);
+}
+
+.intro-block-devider {
+  height: 1px;
+  background: rgb(207, 207, 207);
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.intro-block-button-box {
+  display: flex;
+}
+
+.intro-block-action-button {
+  border: solid 1px transparent;
+  width: 200px;
+  padding: 20px;
+  font-weight: 600;
+  background: rgb(0, 153, 255);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+  border-radius: 4px;
+
+  &:hover {
+    background: rgb(233, 54, 137);
+    color: white;
+    border: solid 1px transparent;
+    transition: 0.3s;
+  }
+}
+
+.alt-button {
+  border: solid 1px black;
+  background: transparent;
+  color: black;
+}
+
+.mobile-title-image {
+  display: none;
+  max-width: 100%;
+}
+
+@media (max-width: 530px) {
+  .title-frame {
+    display: none;
+  }
+
+  .intro-block-paddings {
+    padding: 50px 0 50px 0;
+  }
+
+  .mobile-title-image {
+    display: block;
+    justify-self: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 490px) {
+  .intro-block-button-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-block-button-box :first-child {
+    margin-bottom: 20px;
+  }
+
+  .intro-block-action-button {
+    margin-right: 0;
+  }
+
+  .intro-block-subtitle {
+    text-align: center;
+  }
+}

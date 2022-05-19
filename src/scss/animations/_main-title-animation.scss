@@ -1,0 +1,259 @@
+$marginbot: -100px;
+$rightPosition: 120px;
+
+.animationOnloadDelay *,
+.animationOnloadDelay *:before,
+.animationOnloadDelay *:after {
+  animation-play-state: paused !important;
+}
+
+@-webkit-keyframes marker-stroke {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 200px;
+  }
+}
+
+@keyframes marker-stroke {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 200px;
+  }
+}
+
+@-webkit-keyframes marker-pencil {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    right: $rightPosition;
+    bottom: $marginbot;
+  }
+
+  20% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    right: $rightPosition;
+    bottom: $marginbot;
+    opacity: 1;
+  }
+
+  70% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    right: -130px;
+    bottom: $marginbot;
+    opacity: 1;
+  }
+
+  90% {
+    -webkit-transform: rotate(231deg);
+    transform: rotate(231deg);
+    right: -80px;
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  95% {
+    -webkit-transform: rotate(231deg);
+    transform: rotate(231deg);
+    right: -80px;
+    bottom: 20px;
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: rotate(231deg);
+    transform: rotate(231deg);
+    right: -80px;
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes marker-pencil {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    right: $rightPosition;
+    bottom: $marginbot;
+  }
+
+  20% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    right: $rightPosition;
+    bottom: $marginbot;
+    opacity: 1;
+  }
+
+  70% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    right: -130px;
+    bottom: $marginbot;
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: rotate(231deg);
+    transform: rotate(231deg);
+    right: -80px;
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes marker-arrow {
+  0% {
+    -webkit-transform: rotate(-120deg);
+    transform: rotate(-120deg);
+    left: -105px;
+    opacity: 0;
+  }
+
+  20% {
+    -webkit-transform: rotate(-120deg);
+    transform: rotate(-120deg);
+    left: -105px;
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes marker-arrow {
+  0% {
+    -webkit-transform: rotate(-120deg);
+    transform: rotate(-120deg);
+    left: -105px;
+    opacity: 0;
+  }
+
+  20% {
+    -webkit-transform: rotate(-120deg);
+    transform: rotate(-120deg);
+    left: -105px;
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    left: 0;
+    opacity: 1;
+  }
+}
+
+
+// Loading spinner css
+.spinnerBackground {
+  opacity: 1;
+  position: absolute;
+  z-index: 500;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sk-cube-grid {
+  width: 40px;
+  height: 40px;
+  z-index: 500;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #333;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}

@@ -1,35 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./scss/main.scss">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills to habits</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="stylesheet" href="./scss/main.scss"/>
+  <script type="module" src="./js/main.js"></script>
 </head>
+
 <body>
-    <div class="intro-block-frame">
-       
-        <div class="title-frame">
-           
-            <div class="marker-arrow-box">
-                <img class="marker-arrow" src="./resources/img/marker-arrow.png" alt="">
-            </div>
-            <p class="title-upper-part animate__animated animate__fadeInDown animate__delay-1s">Skills</p>
-            <p class="title-middle-part animate__animated animate__fadeIn animate__delay-1s">To</p>
-            <p class="title-lower-part animate__animated animate__fadeInUp animate__delay-1s">Habits</p>
-            <div class="marker-underline-box">
-                <img src="./resources/img/marker-stroke-desk.png" alt="">
-            </div>
-            <img class="marker-pencil" src="./resources/img/white-marker.png" alt="">
+
+  <div class="spinnerBackground">
+    <div class="sk-cube-grid">
+      <div class="sk-cube sk-cube1"></div>
+      <div class="sk-cube sk-cube2"></div>
+      <div class="sk-cube sk-cube3"></div>
+      <div class="sk-cube sk-cube4"></div>
+      <div class="sk-cube sk-cube5"></div>
+      <div class="sk-cube sk-cube6"></div>
+      <div class="sk-cube sk-cube7"></div>
+      <div class="sk-cube sk-cube8"></div>
+      <div class="sk-cube sk-cube9"></div>
+    </div>
+  </div>
+
+  <div class="hideContentWhileLoading">
+
+    <nav class="nav-frame" >
+
+      <div class="global-wrapper">
+        <div class="nav-box">
+          <p class="nav-logo ">Logo</p>
+          <ul>
+            <li><a class="nav-link " href="">Контакты</a></li>
+            <li><a class="nav-link " href="">Услуги</a></li>
+            <li><a class="nav-link " href="">Цены</a></li>
+            <li><a class="nav-link " href="">О Нас</a></li>
+            <li><a class="nav-link " href="">Отзывы</a></li>
+          </ul>
         </div>
+      </div>
 
-    </div>
-    <div class="block-2">
+    </nav>
 
-    </div>
-    
-   
+    <main>
+
+      <section class="intro-block-frame intro-block-paddings">
+        <div class="global-wrapper">
+          <div class="intro-block-grid-box">
+            <div class="title-frame">
+              <div class="marker-arrow-box">
+                <img class="marker-arrow" src="./resources/img/marker-arrow.png" alt="">
+              </div>
+              <p class="title-upper-part" data-aos="fade-down" data-aos-delay="100">Skills</p>
+              <p class="title-middle-part " data-aos="fade-in" data-aos-delay="700">To</p>
+              <p class="title-lower-part " data-aos="fade-up" data-aos-delay="1300">Habits</p>
+              <div class="marker-underline-box">
+                <img src="./resources/img/marker-stroke-desk.png" alt="">
+              </div>
+              <img class="marker-pencil" src="./resources/img/white-marker.png" alt="">
+            </div>
+            <img class="mobile-title-image" src="./resources/img/mobile-title-image.png" alt="Логотип компании">
+            <div class="intro-block-description-box">
+              <h1 class="intro-block-title global-title-text global-color-dark " data-aos="fade-up" data-aos-delay="3800"><span class="first-title-span">Сильнее<span> • <span class="second-title-span">Лучше</span> • <span class="third-title-span">Быстрее</span></h1>
+              <div class="intro-block-devider " data-aos="fade-up" data-aos-delay="4000"></div>
+              <p class="intro-block-subtitle global-subtitle-text global-color-gray " data-aos="fade-up" data-aos-delay="4200"><span>Краткое описание овашейкомпании<span>-постоянное информационно обеспечение нашей деятельности позволяет оценить значение существенных финансовых и административных условий<p>
+            </div>
+            <div class="intro-block-button-box " data-aos="fade-up" data-aos-delay="4200">
+              <div class="intro-block-action-button">Заказать</div>
+              <div class="intro-block-action-button alt-button">Подробнее</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="description-block description-block-paddings">
+        <div class="global-wrapper">
+          <div class="description-block-frame">
+            <div data-aos="fade-right" class="dscr-left-box">
+              <img class="dscr-illustration" src="./resources/img/ill-crowd-rdy2.png" alt="Иллюстрация презентации">
+              <img class="dscr-illustration-mobile" src="./resources/img/ill-crowd-rdy-mobile.png" alt="Иллюстрация презентации">
+            </div>
+            <div data-aos="fade-left" class="dscr-right-box">
+              <h2 class="global-title-text global-color-white">Skills to Habits - это визуальная коммуникация вашей идеи</h2>
+              <p class="global-subtitle-text global-color-white">Краткое описание о вашей компании - постоянное информационно обеспечениенашейдеятельностипозволяетоценитьзначение существенных финансовых и административных условий.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 </html>

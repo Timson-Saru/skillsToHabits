@@ -1,8 +1,7 @@
 {
-  "name": "tests",
+  "name": "skillsToHabits",
   "version": "1.0.0",
   "description": "",
-  "main": "root.js",
   "scripts": {
     "dev": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html"
@@ -11,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5",
+    "@parcel/transformer-sass": "^2.3.1",
+    "parcel": "^2.3.1",
     "sass": "^1.32.13"
   },
   "dependencies": {}
