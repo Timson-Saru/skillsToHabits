@@ -1,6 +1,10 @@
 .hideContentWhileLoading {
   opacity: 0;
-  transition: 0.5s;
+}
+
+.showContentWhenLoaded {
+  opacity: 1;
+  transition: ease-in 0.5s;
 }
 
 html {
