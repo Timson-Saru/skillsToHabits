@@ -1,4 +1,5 @@
 node_modules
+mockupFiles
 .parcel-cache
 .cache
 dist

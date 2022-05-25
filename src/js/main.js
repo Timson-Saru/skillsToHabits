@@ -3,7 +3,7 @@ import initObserver from './animation/navigationObserver.js';
 import isMobileDevice from './helpers/checkMobile.js';
 import AOS from 'aos/dist/aos.js'
 
-const content = document.querySelector('.initialContent');
+const content = document.querySelector('.loadingContentWrapper');
 const animationBox = document.querySelector('.title-frame')
 const spinner = document.querySelector('.spinnerBackground');
 const body = document.querySelector('body');
