@@ -9,6 +9,7 @@ html {
 
 .showContentWhenLoaded {
   opacity: 1;
+  -webkit-transition: ease-in 0.5s;
   transition: ease-in 0.5s;
 }
 
@@ -75,6 +76,7 @@ html {
 
 @media only screen and (max-width: 500px) {
   body {
+    -webkit-animation: none !important;
     animation: none !important;
   }
 }
