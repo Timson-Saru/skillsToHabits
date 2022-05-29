@@ -19,8 +19,8 @@ function contentReady() {
   content.classList.add('showContentWhenLoaded');
   animationBox.classList.remove('animationOnloadDelay');
 
-  if (!isMobileDevice()) initObserver();
-  else body.tabIndex = 0; // чтобы работал кривой IOS c button: hover эфектами при табе.
+  if (isMobileDevice()) body.tabIndex = 0; // чтобы работал кривой IOS c button: hover эфектами при табе.
+  else initObserver();
 
   AOS.init({
     delay: 0, // values from 0 to 3000, with step 50ms

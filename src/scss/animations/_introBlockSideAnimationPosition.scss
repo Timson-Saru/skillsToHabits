@@ -1,0 +1,143 @@
+.animationTitle {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.animationBuletText {
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.leftAnimationFrame {
+  height: 615px;
+  width: 315px;
+  position: absolute;
+  left: -408px;
+
+  .ideaTitlePosition {
+    position: absolute;
+    right: -81px;
+    top: 27px;
+  }
+
+  .ideaSlashPosition {
+    position: absolute;
+    right: -78px;
+    top: 57px;
+  }
+
+  .lightBulbPosition {
+    position: absolute;
+    right: 47px;
+    top: -40px;
+  }
+
+  .leftTrailPosition {
+    position: absolute;
+    top: 54px;
+    right: -3px;
+  }
+
+  .conceptPosition {
+    position: relative;
+    left: 32px;
+    bottom: -121px;
+  }
+
+  .conceptTitlePosition {
+    left: 18px;
+    bottom: 357px;
+    position: absolute;
+  }
+
+  .gotchasPosition {
+    position: absolute;
+    bottom: 210px;
+    right: 83px;
+  }
+
+  .gotchasTitlePosition {
+    position: absolute;
+    left: 143px;
+    bottom: 178px;
+  }
+
+  .deadlinePosition {
+    position: absolute;
+    left: 70px;
+    bottom: 0;
+  }
+
+  .deadlineTitlePosition {
+    position: absolute;
+    bottom: 6px;
+    left: 45px;
+  }
+}
+
+.rightAnimationFrame {
+  height: 615px;
+  width: 315px;
+  position: absolute;
+  right: -357px;
+
+  .rightTrailPosition {
+    position: absolute;
+    bottom: 114px;
+    // left: 0;
+  }
+
+  .goalPosition {
+    position: absolute;
+    top: -42px;
+    right: -44px;
+  }
+
+  .goalTitlePosition {
+    position: absolute;
+    right: -7px;
+    top: 101px;
+  }
+
+  .goalSlashPosition {
+    position: absolute;
+    right: -19px;
+    top: 134px;
+  }
+
+  .presentationPosition {
+    position: absolute;
+    bottom: 40px;
+    left: 143px;
+  }
+
+  .presentationTitlePosition {
+    position: absolute;
+    bottom: 10px;
+    left: 104px;
+  }
+
+  .anylizePosition {
+    position: absolute;
+    right: -4px;
+    bottom: 264px;
+  }
+
+  .anylizeTitlePosition {
+    position: absolute;
+    right: 13px;
+    bottom: 233px;
+  }
+
+  .couchingPosition {
+    position: absolute;
+    left: -4px;
+    top: 62px;
+  }
+
+  .couchingTitlePosition {
+    position: absolute;
+    left: -13px;
+    top: 170px;
+  }
+}
