@@ -141,3 +141,13 @@
     top: 170px;
   }
 }
+
+@media (max-width: 1430px) {
+  .rightAnimationFrame {
+    display: none;
+  }
+
+  .leftAnimationFrame {
+    display: none;
+  }
+}
