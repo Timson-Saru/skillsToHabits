@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skills to habits</title>
+  <link rel="shortcut icon" type="image/png" href="/favicon.png">
   <link rel="stylesheet" href="/node_modules/aos/dist/aos.css">
   <link rel="stylesheet" href="./scss/main.scss"/>
   <script type="module" src="./js/main.js"></script>
@@ -32,22 +33,23 @@
 
       <div class="global-wrapper">
         <div class="nav-box">
-          <p class="nav-logo ">Logo</p>
+          <p class="nav-logo ">Skills to Habits</p>
           <ul>
-            <li><a class="nav-link " href="">Контакты</a></li>
-            <li><a class="nav-link " href="">Услуги</a></li>
-            <li><a class="nav-link " href="">Цены</a></li>
-            <li><a class="nav-link " href="">О Нас</a></li>
-            <li><a class="nav-link " href="">Отзывы</a></li>
+            <li><a aria-label='Контакты' class="nav-link " href="">Контакты</a></li>
+            <li><a aria-label='Услуги' class="nav-link " href="">Услуги</a></li>
+            <li><a aria-label='Цены' class="nav-link " href="">Цены</a></li>
+            <li><a aria-label='О Нас' class="nav-link " href="">О Нас</a></li>
+            <li><a aria-label='Отзывы' class="nav-link " href="">Отзывы</a></li>
           </ul>
         </div>
       </div>
 
     </nav>
 
-    <main>
+    <main class="globalOverflowX">
 
       <section class="intro-block-frame intro-block-paddings">
+        <div class="intersectionObserverPoint"></div>
         <div class="global-wrapper">
 
           <div class="intro-block-grid-box">
@@ -75,6 +77,7 @@
               <div class="intro-block-action-button">Заказать</div>
               <div class="intro-block-action-button alt-button">Подробнее</div>
             </div>
+
             <div class="introAnimationTrigger"></div>
             <div class="leftAnimationFrame">
               <img
@@ -83,7 +86,7 @@
                 data-aos="fade-in"
                 class="lightBulbPosition"
                 src="./resources/FirstBlockAnimate/leftSlide/lightBulb.png"
-                alt=""
+                alt="Компания Skills to Habits поможет вашему развитию"
               >
               <p
                 data-aos-anchor=".introAnimationTrigger"
@@ -100,6 +103,7 @@
                 class="ideaSlashPosition"
                 src="./resources/FirstBlockAnimate/leftSlide/ideaSlash.png"
                 alt=""
+                role="presentation"
               >
               <img
                 data-aos-anchor=".introAnimationTrigger"
@@ -108,6 +112,7 @@
                 class="leftTrailPosition"
                 src="./resources/FirstBlockAnimate/leftSlide/leftTrail.png"
                 alt=""
+                role="presentation"
               >
               <img
                 data-aos-anchor=".introAnimationTrigger"
@@ -115,7 +120,7 @@
                 data-aos="fade-right"
                 class="conceptPosition"
                 src="./resources/FirstBlockAnimate/leftSlide/concept.png"
-                alt=""
+                alt="поможем разработать концепт"
               >
               <p
                 data-aos-anchor=".introAnimationTrigger"
@@ -131,7 +136,7 @@
                 data-aos="fade-left"
                 class="gotchasPosition"
                 src="./resources/FirstBlockAnimate/leftSlide/gotchas.png"
-                alt=""
+                alt="Учтем все нюансы"
               >
               <p
                 data-aos-anchor=".introAnimationTrigger"
@@ -147,7 +152,7 @@
                 data-aos="fade-right"
                 class="deadlinePosition"
                 src="./resources/FirstBlockAnimate/leftSlide/deadLine.png"
-                alt=""
+                alt="Поставим четкие сроки"
               >
               <p
                 data-aos-anchor=".introAnimationTrigger"
@@ -158,7 +163,6 @@
                 Сроки
               </p>
             </div>
-
             <div class="rightAnimationFrame">
               <img
                 data-aos-anchor=".introAnimationTrigger"
@@ -167,6 +171,7 @@
                 class="rightTrailPosition"
                 src="./resources/FirstBlockAnimate/rightSlide/rightTrail.png"
                 alt=""
+                role="presentation"
               >
               <img
                 data-aos-anchor=".introAnimationTrigger"
@@ -174,7 +179,7 @@
                 data-aos="fade-in"
                 class="goalPosition"
                 src="./resources/FirstBlockAnimate/rightSlide/goal.png"
-                alt=""
+                alt="Достигайте ваших целей с компанией Skills to Habits"
               >
               <p
                 data-aos-anchor=".introAnimationTrigger"
@@ -182,7 +187,7 @@
                 data-aos="fade-up"
                 class="animationTitle goalTitlePosition"
               >
-                К Цели
+                К результату
               </p>
               <img
                 data-aos-anchor=".introAnimationTrigger"
@@ -191,6 +196,7 @@
                 class="goalSlashPosition"
                 src="./resources/FirstBlockAnimate/rightSlide/gialSlash.png"
                 alt=""
+                role="presentation"
               >
               <img
                 data-aos-anchor=".introAnimationTrigger"
@@ -198,7 +204,7 @@
                 data-aos="fade-right"
                 class="couchingPosition"
                 src="./resources/FirstBlockAnimate/rightSlide/couching.png"
-                alt=""
+                alt="Проводим коучинг"
               >
               <p
                 data-aos-anchor=".introAnimationTrigger"
@@ -214,13 +220,13 @@
                 data-aos="fade-left"
                 class="anylizePosition"
                 src="./resources/FirstBlockAnimate/rightSlide/anylize.png"
-                alt=""
+                alt="Сделаем анализ рынка под ваш продукт"
               >
               <p
                 data-aos-anchor=".introAnimationTrigger"
                 data-aos-delay="15300"
                 data-aos="fade-left"
-                class="animationBuletText anylizeTitlePosition"
+                class="anylizeTitlePosition animationBuletText"
               >
                 Анализ
               </p>
@@ -230,7 +236,7 @@
                 data-aos="fade-left"
                 class="presentationPosition"
                 src="./resources/FirstBlockAnimate/rightSlide/presentation.png"
-                alt=""
+                alt="проведем консультацию"
               >
               <p
                 data-aos-anchor=".introAnimationTrigger"
@@ -241,6 +247,18 @@
                 Консультация
               </p>
             </div>
+            <div
+              class="narrowScreenLeftIllustrationFrame"
+              data-aos-anchor=".introAnimationTrigger"
+              data-aos-delay="5800"
+              data-aos="fade-right"
+            ></div>
+            <div
+              class="narrowScreenRightIllustrationFrame"
+              data-aos-anchor=".introAnimationTrigger"
+              data-aos-delay="6500"
+              data-aos="fade-left"
+            ></div>
           </div>
 
         </div>
@@ -256,7 +274,7 @@
             </div>
             <div data-aos-anchor=".dscrAnimationTrigger" data-aos="fade-left" class="dscr-right-box">
               <h2 class="global-title-text global-color-white">Skills to Habits - это визуальная коммуникация вашей идеи</h2>
-              <p class="global-subtitle-text global-color-white">Краткое описание о вашей компании - постоянное информационно обеспечениенашейдеятельностипозволяетоценитьзначение существенных финансовых и административных условий.</p>
+              <p class="global-subtitle-text global-color-white">Краткое описание о вашей компании - постоянное информационно обеспечение нашей деятельности позволяет оценить значение существенных финансовых и административных условий.</p>
             </div>
           </div>
         </div>

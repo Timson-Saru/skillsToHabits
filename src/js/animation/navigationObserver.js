@@ -1,5 +1,5 @@
 export default function initObserver() {
-	const firstBlockObserver = document.querySelector('.intro-block-frame');
+  const intersectionObserverPoint = document.querySelector('.intersectionObserverPoint');
 	const navContent = document.querySelector('.nav-box');
   const navBackground = document.querySelector('.nav-frame');
 	const menuLinkCollection = document.querySelectorAll('.nav-link');
@@ -30,5 +30,5 @@ export default function initObserver() {
 		});
 	}, options);
 
-	observer.observe(firstBlockObserver);
+	observer.observe(intersectionObserverPoint);
 }

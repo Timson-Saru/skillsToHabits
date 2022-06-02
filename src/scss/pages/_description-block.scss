@@ -19,6 +19,8 @@
 .dscr-left-box {
   width: 50%;
   margin-right: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .dscr-right-box {
@@ -48,12 +50,12 @@
 }
 
 .dscr-illustration-mobile {
-  max-width: 100%;
+  max-width: 290px;
   display: none;
 }
 
 .dscr-illustration {
-  max-width: 100%;
+  max-width: 600px;
 }
 
 @media (max-width: 1200px) {
@@ -84,17 +86,19 @@
   }
 
   .dscr-left-box {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -moz-box-pack: center;
-    justify-content: center;
     width: 100%;
     margin-bottom: 50px;
     margin-right: 0;
+  }
+}
+
+@media (max-width: 1430px) {
+  .description-block-paddings {
+    padding: 170px 0 125px 0;
+  }
+
+  .dscr-illustration {
+    max-width: 500px;
   }
 }
 

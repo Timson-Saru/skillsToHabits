@@ -27,7 +27,23 @@
   li {
     display: inline;
     margin-left: 70px;
+    position: relative;
   }
+}
+
+.nav-link:after {
+  position: absolute;
+  content: '';
+  transition: 0.3s;
+  height: 1px;
+  width: 0;
+  bottom: -5px;
+  left: 0;
+  background: #413c3ccc;
+}
+
+.nav-link:hover:after {
+  width: 100%;
 }
 
 .nav-link {
@@ -35,7 +51,7 @@
   color: rgb(114, 114, 114);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-weight: 400;
+  font-weight: 300;
 
   &:hover {
     color: rgb(0, 0, 0);
@@ -44,9 +60,11 @@
   }
 }
 
+
+
 .nav-logo {
-  font-family: 'marker';
-  font-size: 2rem;
+  font-size: 1.6rem;
+  font-family: 'oswald';
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -74,7 +92,7 @@
 
 .nav-logo-scrolled {
   color: white;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }

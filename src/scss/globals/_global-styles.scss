@@ -3,6 +3,10 @@ html {
   font-family: 'montserrat';
 }
 
+.globalOverflowX {
+  overflow-x: hidden;
+}
+
 .hideContentWhileLoading {
   opacity: 0;
 }
