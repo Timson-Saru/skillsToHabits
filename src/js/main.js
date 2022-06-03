@@ -1,4 +1,4 @@
-import changeTitleColor from './animation/animations.js';
+import { changeTitleColor } from './animation/animations.js';
 import initObserver from './animation/navigationObserver.js';
 import isMobileDevice from './helpers/checkMobile.js';
 import AOS from 'aos/dist/aos.js'

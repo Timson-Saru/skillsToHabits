@@ -62,12 +62,7 @@
 
 
 
-.nav-logo {
-  font-size: 1.6rem;
-  font-family: 'oswald';
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
+
 
 @media (max-width: 770px) {
   .nav-frame {
@@ -90,13 +85,6 @@
   background: #151414cc;
 }
 
-.nav-logo-scrolled {
-  color: white;
-  font-size: 1.2rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
 .nav-link-scrolled {
   text-decoration: none;
   color: #bfbfbf;
@@ -110,4 +98,24 @@
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
+}
+
+.jiggleLogoFrame {
+  display: flex;
+  font-size: 1.6rem;
+  transition: 0.3s;
+}
+
+.nav-logo-latter {
+  font-family: oswald;
+  transition: 0.05s !important;
+}
+
+.nav-logo-latter-scrolled {
+  transition: 0.3s !important;
+  color: white !important;
+}
+
+.preventLogoJiggle {
+  transform: translateY(0px) !important;
 }
