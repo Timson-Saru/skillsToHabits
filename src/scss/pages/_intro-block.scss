@@ -1,5 +1,5 @@
-@use '../animations/main-title-animation.scss';
-@use '../animations/introBlockSideAnimationPosition.scss';
+@use '/src/scss/animations/_main-title-animation.scss';
+@use '/src/scss/animations/_introBlockSideAnimationPosition.scss';
 
 .intro-block-frame {
   background: #fafafa;

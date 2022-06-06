@@ -48,21 +48,17 @@
 
 .nav-link {
   text-decoration: none;
-  color: rgb(114, 114, 114);
+  color: rgb(0, 0, 0);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-weight: 300;
+  font-weight: 500;
 
-  &:hover {
-    color: rgb(0, 0, 0);
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
+  // &:hover {
+  //   color: rgb(0, 0, 0);
+  //   -webkit-transition: 0.3s;
+  //   transition: 0.3s;
+  // }
 }
-
-
-
-
 
 @media (max-width: 770px) {
   .nav-frame {
