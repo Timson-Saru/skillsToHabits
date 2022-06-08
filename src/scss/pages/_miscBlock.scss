@@ -1,0 +1,9 @@
+@use '/src/scss/animations/_miscBlockAnimation.scss';
+
+.miscAnimationTrigger {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  background: burlywood;
+  z-index: 1;
+}
