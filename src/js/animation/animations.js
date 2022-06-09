@@ -10,7 +10,6 @@ export function changeTitleColor() {
 	}, 5800);
 }
 
-
 export function logoJiggle() {
   let fontIndex = 0;
   const logoLetters = document.querySelectorAll('.nav-logo-latter');

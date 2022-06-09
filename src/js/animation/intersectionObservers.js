@@ -1,6 +1,6 @@
 import { logoJiggle, stopLogoJiggle } from './animations.js';
 
-export default function initObserver() {
+export function initNavObserver() {
   const intersectionObserverPoint = document.querySelector('.intersectionObserverPoint');
 	const navContent = document.querySelector('.nav-box');
   const navBackground = document.querySelector('.nav-frame');
@@ -35,6 +35,30 @@ export default function initObserver() {
 				menuLinkCollection.forEach((element) => {
 					element.classList.remove('nav-link-scrolled');
 				});
+			}
+		});
+	}, options);
+
+	observer.observe(intersectionObserverPoint);
+}
+
+export function initMiscBlockObserver() {
+
+  const intersectionObserverPoint = document.querySelector('.miscAnimationTrigger');
+  const animationFrame = document.querySelector('.miskBlockAnimationFrame');
+  const iconScene = document.querySelector('.miskBlockIconScene');
+	const options = {
+		threshold: 0.9,
+		rootMargin: '0px',
+	};
+
+	const observer = new IntersectionObserver(function (entries) {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+        console.log('is intersecting');
+        iconScene.classList.add('sceneShow');
+        animationFrame.classList.remove('animationOnloadDelay');
+        observer.unobserve(intersectionObserverPoint)
 			}
 		});
 	}, options);

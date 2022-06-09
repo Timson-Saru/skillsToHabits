@@ -1,12 +1,6 @@
 $marginbot: -100px;
 $rightPosition: 120px;
 
-.animationOnloadDelay *,
-.animationOnloadDelay *:before,
-.animationOnloadDelay *:after {
-  animation-play-state: paused !important;
-}
-
 @-webkit-keyframes marker-stroke {
   0% {
     width: 0px;

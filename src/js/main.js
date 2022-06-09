@@ -1,5 +1,5 @@
 import { changeTitleColor } from './animation/animations.js';
-import initObserver from './animation/navigationObserver.js';
+import { initNavObserver, initMiscBlockObserver } from './animation/intersectionObservers.js';
 import isMobileDevice from './helpers/checkMobile.js';
 import AOS from 'aos/dist/aos.js'
 
@@ -26,7 +26,8 @@ else {
     content.classList.add('showContentWhenLoaded');
     animationBox.classList.remove('animationOnloadDelay');
 
-    initObserver();
+    initNavObserver();
+    initMiscBlockObserver();
 
     AOS.init({
       delay: 0, // values from 0 to 3000, with step 50ms

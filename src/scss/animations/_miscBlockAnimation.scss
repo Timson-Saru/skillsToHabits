@@ -1,4 +1,4 @@
-$bgHeight: 500px;
+$bgHeight: 700px;
 $bgDelay: 3s;
 
 //Background slide animation
@@ -14,7 +14,7 @@ $bgDelay: 3s;
   position: absolute;
   background: #e93689;
   width: 100vw;
-  height: $bgHeight;
+  min-height: $bgHeight;
   animation: upperSlideWave 3.1s;
   animation-fill-mode: forwards;
   animation-delay: $bgDelay;
@@ -24,7 +24,7 @@ $bgDelay: 3s;
   position: absolute;
   background: #0099ff;
   width: 100vw;
-  height: $bgHeight;
+  min-height: $bgHeight;
   animation: upperSlideWave 3.2s;
   animation-fill-mode: forwards;
   animation-delay: $bgDelay;
@@ -34,7 +34,7 @@ $bgDelay: 3s;
   position: absolute;
   background: #fc940d;
   width: 100vw;
-  height: $bgHeight;
+  min-height: $bgHeight;
   animation: upperSlideWave 3.3s;
   animation-fill-mode: forwards;
   animation-delay: $bgDelay;
@@ -44,7 +44,7 @@ $bgDelay: 3s;
   position: absolute;
   background: black;
   width: 100vw;
-  height: $bgHeight;
+  min-height: $bgHeight;
   animation: upperSlideWave 3s;
   animation-fill-mode: forwards;
   animation-delay: $bgDelay;
@@ -68,7 +68,6 @@ $bgDelay: 3s;
 
 .miskBlockIconScene {
   position: absolute;
-  // border: solid 1px red;
   height: 100%;
   width: 700px;
   z-index: 1;
@@ -77,23 +76,24 @@ $bgDelay: 3s;
   animation: endScene 0.3s;
   animation-fill-mode: forwards;
   animation-delay: 4s;
+  opacity: 0;
+  transform: translate(200px, 300px);
+  transition: 2.8s;
 }
 
-.tt {
-  position: absolute;
-  height: 15px;
-  width: 15px;
-  // background: rgba(248, 107, 107, 0.089);
-  bottom: 48%;
+.sceneShow {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .mscHand {
   position: absolute;
-  left: -12%;
+  left: -3%;
   animation: handMotion 3s;
   animation-fill-mode: forwards;
   transform: rotate(37deg);
   animation-delay: 1s;
+  top: calc(48% - 140px);
 }
 
 .mscUnderline {
@@ -101,43 +101,10 @@ $bgDelay: 3s;
   top: 50%;
   animation: handUnderline 1.5s;
   animation-fill-mode: forwards;
-  animation-delay: 2.5s;
+  animation-delay: 2.48s;
   width: 0;
   height: 5px;
   z-index: 4;
-}
-
-.mscBlueBlob {
-  position: absolute;
-  top: 40%;
-  left: 9%;
-  z-index: 3;
-  animation: spash 0.4s;
-  animation-fill-mode: forwards;
-  animation-delay: 2.9s;
-  clip-path: circle(2.2% at 100% 100%);
-}
-
-.mscPinkBlob {
-  position: absolute;
-  top: 27%;
-  left: 16%;
-  z-index: 2;
-  animation: spash 0.5s;
-  animation-fill-mode: forwards;
-  animation-delay: 3.1s;
-  clip-path: circle(2.2% at 100% 100%);
-}
-
-.mscOrangeBlob {
-  position: absolute;
-  top: 40%;
-  left: 29%;
-  z-index: 1;
-  animation: spash 0.4s;
-  animation-fill-mode: forwards;
-  animation-delay: 3.3s;
-  clip-path: circle(2.2% at 100% 100%);
 }
 
 @keyframes endScene {
@@ -150,29 +117,19 @@ $bgDelay: 3s;
   }
 }
 
-@keyframes spash {
-  from {
-    clip-path: circle(2.2% at 89% 100%);
-  }
-
-  to {
-    clip-path: circle(120.0% at 80% 89%);
-  }
-}
-
 @keyframes handMotion {
   0% {
-    transform: translate(0, 0);
+    // transform: translate(0, 0);
     transform: rotate(37deg);
   }
 
   50% {
     transform: rotate(0deg);
-    transform: translate(30%, 62%);
+    // transform: translate(30%, 62%);
   }
 
   100% {
-    transform: translate(175%, 62%);
+    transform: translate(148%, 0);
   }
 }
 
