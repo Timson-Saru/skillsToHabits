@@ -1,6 +1,39 @@
 .construction {
+  padding-top: 275px;
   min-height: 500px;
   background: black;
   margin-top: -45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   clip-path: polygon(35% 1%, 54% 4%, 67% 1%, 85% 4%, 100% 0, 100% 15%, 100% 85%, 100% 100%, 84% 100%, 0 100%, 0 0, 17% 5%);
+}
+
+.upperTape {
+  height: 15px;
+  width: 100%;
+  background: url('/src/resources/img/conTape.jpg');
+  background-size: auto 100%;
+}
+
+.lowerTape {
+  height: 15px;
+  width: 100%;
+  background: url('/src/resources/img/conTape.jpg');
+  background-size: auto 100%;
+}
+
+.warnText {
+  margin: 70px 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+@media (max-width: 750px) {
+  .warnText {
+    margin: 40px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 }

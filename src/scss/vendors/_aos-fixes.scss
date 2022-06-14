@@ -33,6 +33,11 @@ body[data-aos-delay='4200'] [data-aos],
   transition-delay: 4200ms;
 }
 
+body[data-aos-delay='4800'] [data-aos],
+[data-aos][data-aos][data-aos-delay='4800'] {
+  transition-delay: 4800ms;
+}
+
 body[data-aos-delay='5800'] [data-aos],
 [data-aos][data-aos][data-aos-delay='5800'] {
   transition-delay: 5800ms;

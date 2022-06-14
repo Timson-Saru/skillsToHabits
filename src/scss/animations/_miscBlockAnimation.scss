@@ -1,13 +1,17 @@
-$bgHeight: 700px;
+$bgHeight: 100%;
 $bgDelay: 3s;
 
 //Background slide animation
 
 .miskBlockAnimationFrame {
-  position: relative;
+  position: absolute;
   overflow: hidden;
-  margin-top: -45px;
+  // margin-top: -45px;
   min-height: $bgHeight;
+  // z-index: 55;
+  top: 0;
+  width: 100%;
+  pointer-events: none;
 }
 
 .miskBlockPinkLayer {
@@ -119,13 +123,11 @@ $bgDelay: 3s;
 
 @keyframes handMotion {
   0% {
-    // transform: translate(0, 0);
     transform: rotate(37deg);
   }
 
   50% {
     transform: rotate(0deg);
-    // transform: translate(30%, 62%);
   }
 
   100% {

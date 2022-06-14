@@ -8,12 +8,12 @@ export function initNavObserver() {
   const logoFrame = document.querySelector('.jiggleLogoFrame');
 
 
-  let animationTriggerFlag = false;
+
 	const options = {
-		threshold: 0.9,
+		threshold: 0.1,
 		rootMargin: '0px',
 	};
-
+  let animationTriggerFlag = false;
 	const observer = new IntersectionObserver(function (entries) {
 		entries.forEach((entry) => {
 			if (!entry.isIntersecting) {
@@ -49,13 +49,12 @@ export function initMiscBlockObserver() {
   const iconScene = document.querySelector('.miskBlockIconScene');
 	const options = {
 		threshold: 0.9,
-		rootMargin: '0px',
+		rootMargin: '50px',
 	};
 
 	const observer = new IntersectionObserver(function (entries) {
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
-        console.log('is intersecting');
         iconScene.classList.add('sceneShow');
         animationFrame.classList.remove('animationOnloadDelay');
         observer.unobserve(intersectionObserverPoint)
