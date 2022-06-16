@@ -6,12 +6,9 @@ $bgDelay: 3s;
 .miskBlockAnimationFrame {
   position: absolute;
   overflow: hidden;
-  // margin-top: -45px;
   min-height: $bgHeight;
-  // z-index: 55;
   top: 0;
   width: 100%;
-  pointer-events: none;
 }
 
 .miskBlockPinkLayer {
