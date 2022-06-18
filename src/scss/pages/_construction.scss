@@ -3,10 +3,22 @@
   min-height: 500px;
   background: black;
   margin-top: -45px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
   justify-content: center;
   text-align: center;
+  -webkit-clip-path: polygon(35% 1%, 54% 4%, 67% 1%, 85% 4%, 100% 0, 100% 15%, 100% 85%, 100% 100%, 84% 100%, 0 100%, 0 0, 17% 5%);
   clip-path: polygon(35% 1%, 54% 4%, 67% 1%, 85% 4%, 100% 0, 100% 15%, 100% 85%, 100% 100%, 84% 100%, 0 100%, 0 0, 17% 5%);
 }
 

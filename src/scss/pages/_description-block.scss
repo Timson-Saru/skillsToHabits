@@ -3,6 +3,7 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
+  -webkit-clip-path: polygon(0 0, 24% 0, 50% 0, 100% 0, 100% 100%, 83% 97%, 63% 98%, 49% 96%, 31% 99%, 12% 96%, 0 100%, 0 52%);
   clip-path: polygon(0 0, 24% 0, 50% 0, 100% 0, 100% 100%, 83% 97%, 63% 98%, 49% 96%, 31% 99%, 12% 96%, 0 100%, 0 52%);
 }
 
@@ -20,7 +21,13 @@
 .dscr-left-box {
   width: 50%;
   margin-right: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
   justify-content: center;
 }
 
@@ -106,6 +113,9 @@
     width: 100%;
     margin-bottom: 50px;
     margin-right: 0;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -moz-box-align: start;
     align-items: flex-start;
   }
 }

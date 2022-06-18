@@ -1,12 +1,11 @@
 import { changeTitleColor } from './animation/animations.js';
 import { initNavObserver, initMiscBlockObserver } from './animation/intersectionObservers.js';
 import isMobileDevice from './helpers/checkMobile.js';
-import AOS from 'aos/dist/aos.js'
-
-initMiscBlockObserver();
+import AOS from 'aos/dist/aos.js';
 
 if (isMobileDevice()) {
   document.querySelector('.spinnerBackground').remove();
+  document.querySelector('.miskBlockAnimationFrame').remove();
   document.body.tabIndex = 0; // fix for IOS hover effect on tap
   AOS.init({ disable: 'mobile' });
 }
@@ -30,6 +29,7 @@ else {
 
     initNavObserver();
     changeTitleColor();
+    initMiscBlockObserver();
 
     AOS.init({
       delay: 0, // values from 0 to 3000, with step 50ms
