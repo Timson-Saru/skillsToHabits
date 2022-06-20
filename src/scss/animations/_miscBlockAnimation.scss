@@ -73,12 +73,12 @@ $bgDelay: 3s;
   width: 700px;
   z-index: 1;
   bottom: 0;
+  opacity: 0;
   left: 25%;
   animation: endScene 0.3s;
   animation-fill-mode: forwards;
   animation-delay: 4s;
   opacity: 0;
-  transform: translate(200px, 300px);
   transition: 2.8s;
 }
 
@@ -87,15 +87,7 @@ $bgDelay: 3s;
   transform: translate(0, 0);
 }
 
-.mscHand {
-  position: absolute;
-  left: -3%;
-  animation: handMotion 3s;
-  animation-fill-mode: forwards;
-  transform: rotate(37deg);
-  animation-delay: 1s;
-  top: calc(48% - 140px);
-}
+
 
 .mscUnderline {
   position: absolute;
@@ -118,17 +110,33 @@ $bgDelay: 3s;
   }
 }
 
+.mscHand {
+  position: absolute;
+  animation: handMotion 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  transform: rotate(37deg);
+  top: calc(27% - 154px);
+  left: 30%;
+}
+
 @keyframes handMotion {
   0% {
+    top: calc(27% - 154px);
+    left: 30%;
     transform: rotate(37deg);
   }
 
   50% {
+    left: -3%;
+    top: calc(50% - 154px);
     transform: rotate(0deg);
   }
 
   100% {
-    transform: translate(148%, 0);
+    left: 43%;
+    top: calc(50% - 150px);
+    transform: rotate(0deg);
   }
 }
 
