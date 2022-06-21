@@ -236,6 +236,10 @@
   display: flex;
 }
 
+.ibBtnPos {
+  margin-right: 20px;
+}
+
 .mobile-title-image {
   display: none;
   max-width: 100%;
@@ -315,9 +319,15 @@
     align-items: center;
   }
 
-  .intro-block-button-box :first-child {
+  .ibBtnPos {
+    margin-right: 0;
     margin-bottom: 20px;
   }
+
+  // .intro-block-button-box :first-child {
+  //   margin-bottom: 20px;
+  //   background: red;
+  // }
 
   .intro-block-action-button {
     margin-right: 0;
