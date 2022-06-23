@@ -1,0 +1,87 @@
+.examplesBlock {
+  background: gray;
+}
+
+.exmFrame {
+  border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.imgPlaceholder {
+  height: 300px;
+  width: 400px;
+  border: solid 1px black;
+  background: rgb(224, 228, 230);
+  margin: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+}
+
+.marginTest {
+  margin: 0 25px;
+}
+
+.flexRightTest {
+  justify-content: flex-end;
+}
+
+.exmLeftBox {
+  display: flex;
+  width: 50%;
+}
+
+.exmRightBox {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.exmTitleTest {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 1.16rem;
+}
+
+.stickRight {
+  text-align: right;
+}
+
+.exmDescTest {
+  // max-width: 50%;
+}
+
+@media (max-width: 850px) {
+
+  .exmFrame {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .exmRightBox {
+    width: 100%;
+    order: 1;
+  }
+
+  .exmLeftBox {
+    width: 100%;
+    justify-content: center;
+    order: 2;
+  }
+
+
+  .stickRight {
+    text-align: center;
+  }
+
+}
