@@ -1,4 +1,3 @@
-import { changeTitleColor } from './animation/animations.js';
 import { initNavObserver, initMiscBlockObserver } from './animation/intersectionObservers.js';
 import isMobileDevice from './helpers/checkMobile.js';
 import AOS from 'aos/dist/aos.js';
@@ -28,7 +27,6 @@ else {
     animationBox.classList.remove('animationOnloadDelay');
 
     initNavObserver();
-    changeTitleColor();
     initMiscBlockObserver();
 
     AOS.init({
