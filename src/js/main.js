@@ -1,6 +1,7 @@
 import { initNavObserver, initMiscBlockObserver } from './animation/intersectionObservers.js';
 import isMobileDevice from './helpers/checkMobile.js';
 import AOS from 'aos/dist/aos.js';
+// import Swiper from '/node_modules/swiper/swiper-bundle.js';
 
 if (isMobileDevice()) {
   document.querySelector('.spinnerBackground').remove();

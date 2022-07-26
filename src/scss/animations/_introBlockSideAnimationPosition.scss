@@ -10,10 +10,15 @@
 }
 
 .leftAnimationFrame {
+
   height: 615px;
   width: 315px;
   position: absolute;
-  left: -408px;
+  left: -240px;
+  background: url('/src/resources/FirstBlockAnimate/leftSlide/wideLeftAnima.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none !important;
 
   .ideaTitlePosition {
     position: absolute;
@@ -81,6 +86,10 @@
   width: 315px;
   position: absolute;
   right: -322px;
+  background: url('/src/resources/FirstBlockAnimate/rightSlide/wideRightAnimation.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none !important;
 
   .rightTrailPosition {
     position: absolute;
