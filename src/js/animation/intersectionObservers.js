@@ -42,25 +42,25 @@ export function initNavObserver() {
 	observer.observe(intersectionObserverPoint);
 }
 
-export function initMiscBlockObserver() {
+// export function initMiscBlockObserver() {
 
-  const intersectionObserverPoint = document.querySelector('.miscAnimationTrigger');
-  const animationFrame = document.querySelector('.miskBlockAnimationFrame');
-  const iconScene = document.querySelector('.miskBlockIconScene');
-	const options = {
-		threshold: 0.9,
-		rootMargin: '50px',
-	};
+//   const intersectionObserverPoint = document.querySelector('.miscAnimationTrigger');
+//   const animationFrame = document.querySelector('.miskBlockAnimationFrame');
+//   const iconScene = document.querySelector('.miskBlockIconScene');
+// 	const options = {
+// 		threshold: 0.9,
+// 		rootMargin: '50px',
+// 	};
 
-	const observer = new IntersectionObserver(function (entries) {
-		entries.forEach((entry) => {
-			if (entry.isIntersecting) {
-        iconScene.classList.add('sceneShow');
-        animationFrame.classList.remove('animationOnloadDelay');
-        observer.unobserve(intersectionObserverPoint)
-			}
-		});
-	}, options);
+// 	const observer = new IntersectionObserver(function (entries) {
+// 		entries.forEach((entry) => {
+// 			if (entry.isIntersecting) {
+//         iconScene.classList.add('sceneShow');
+//         animationFrame.classList.remove('animationOnloadDelay');
+//         observer.unobserve(intersectionObserverPoint)
+// 			}
+// 		});
+// 	}, options);
 
-	observer.observe(intersectionObserverPoint);
-}
+// 	observer.observe(intersectionObserverPoint);
+// }
