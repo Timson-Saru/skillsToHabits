@@ -1,0 +1,31 @@
+.aboutOurWork {
+  background: black;
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+
+.aboutOurWorkImgBox {
+
+  max-width: 800px;
+  min-width: 200px;
+
+
+  img {
+    width: 100%;
+  }
+}
+
+.aowMobileImg {
+  display: none;
+}
+
+@media (max-width: 550px) {
+  .aowMobileImg {
+    display: block;
+  }
+
+  .aowDesktopImg {
+    display: none;
+  }
+}

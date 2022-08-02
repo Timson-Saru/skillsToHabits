@@ -77,39 +77,8 @@
   display: none;
 }
 
-.title-frame {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -moz-box-orient: vertical;
-  -moz-box-direction: normal;
-  flex-direction: column;
-  width: 250px;
-  font-family: 'marker';
-  font-size: 80px;
-  line-height: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -moz-box-align: center;
-  align-items: center;
-  position: relative;
-  justify-self: center;
-  margin-bottom: 100px;
-}
-
 .intro-block-title {
   margin-bottom: 25px;
-  // -webkit-transition: 0.3s;
-  // transition: 0.3s;
-  // width: -webkit-fit-content;
-  // width: -moz-fit-content;
-
-
-  // width: 65%;
   text-align: center;
   line-height: 110%;
   font-weight: 700;
@@ -134,50 +103,6 @@
   margin-right: 20px;
 }
 
-.mobile-title-image {
-  display: none;
-  max-width: 100%;
-}
-
-.narrowScreenLeftIllustrationFrame {
-  display: none;
-  height: 400px;
-  width: 223px;
-  background: url('/src/resources/FirstBlockAnimate/leftSlide/narrowLeftAnimation.png');
-  background-repeat: no-repeat;
-  position: absolute;
-  left: -103px;
-  top: -121px;
-}
-
-.narrowScreenRightIllustrationFrame {
-  display: none;
-  height: 400px;
-  width: 250px;
-  background: url('/src/resources/FirstBlockAnimate/rightSlide/narrowRightAnimation.png');
-  background-repeat: no-repeat;
-  position: absolute;
-  right: -164px;
-  top: -128px;
-}
-
-@media (max-width: 1430px) and (min-width: 1001px) {
-  .narrowScreenLeftIllustrationFrame {
-    display: block;
-  }
-
-  .narrowScreenRightIllustrationFrame {
-    display: block;
-  }
-
-}
-
-@media (max-width: 670px) {
-  .intro-block-title {
-    // line-height: 35px;
-  }
-}
-
 @media (max-width: 550px) {
   .intro_block_hero_img_mobile {
     width: 100%;
@@ -191,18 +116,8 @@
 }
 
 @media (max-width: 530px) {
-  .title-frame {
-    display: none;
-  }
-
   .intro-block-paddings {
     padding: 50px 0 50px 0;
-  }
-
-  .mobile-title-image {
-    display: block;
-    justify-self: center;
-    margin-bottom: 30px;
   }
 }
 
@@ -224,11 +139,6 @@
     margin-right: 0;
     margin-bottom: 20px;
   }
-
-  // .intro-block-button-box :first-child {
-  //   margin-bottom: 20px;
-  //   background: red;
-  // }
 
   .intro-block-action-button {
     margin-right: 0;
