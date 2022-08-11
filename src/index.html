@@ -1,187 +1,452 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Компания Skills to habits проводит тренинги и консультации по улучшению рабочих процессов">
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Skills to habits</title>
-  <link rel="shortcut icon" type="image/png" href="/favicon.png">
-  <link rel="stylesheet" href="./scss/main.scss"/>
-  <script type="module" src="./js/main.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Компания Skills to habits проводит тренинги и консультации по улучшению рабочих процессов"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Skills to habits</title>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" href="./scss/main.scss" />
+    <script type="module" src="./js/main.js"></script>
+  </head>
 
-<body>
-  <!-- Loading spinner -->
-  <div class="spinnerBackground">
-    <div class="sk-cube-grid">
-      <div class="sk-cube sk-cube1"></div>
-      <div class="sk-cube sk-cube2"></div>
-      <div class="sk-cube sk-cube3"></div>
-      <div class="sk-cube sk-cube4"></div>
-      <div class="sk-cube sk-cube5"></div>
-      <div class="sk-cube sk-cube6"></div>
-      <div class="sk-cube sk-cube7"></div>
-      <div class="sk-cube sk-cube8"></div>
-      <div class="sk-cube sk-cube9"></div>
-    </div>
-  </div>
-
-  <div class="loadingContentWrapper">
-
-    <nav class="nav-frame" >
-
-      <div class="global-wrapper">
-        <div class="nav-box">
-          <div class="jiggleLogoFrame">
-            <span class="nav-logo-latter preventLogoJiggle">S</span>
-            <span class="nav-logo-latter">k</span>
-            <span class="nav-logo-latter">i</span>
-            <span class="nav-logo-latter">l</span>
-            <span class="nav-logo-latter">l</span>
-            <span class="nav-logo-latter">s</span>
-            &nbsp;
-            <span class="nav-logo-latter">2</span>
-            &nbsp;
-            <span class="nav-logo-latter">H</span>
-            <span class="nav-logo-latter">a</span>
-            <span class="nav-logo-latter">b</span>
-            <span class="nav-logo-latter">i</span>
-            <span class="nav-logo-latter">t</span>
-            <span class="nav-logo-latter">s</span>
-          </div>
-
-          <ul>
-
-            <li><a aria-label='Услуги' class="nav-link " href="">услуги</a></li>
-            <li><a aria-label='О Нас' class="nav-link " href="">о нас</a></li>
-            <li><a aria-label='Контакты' class="nav-link " href="">контакты</a></li>
-
-          </ul>
-        </div>
+  <body>
+    <!-- Loading spinner -->
+    <div class="spinnerBackground">
+      <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
       </div>
+    </div>
 
-    </nav>
-
-    <main class="globalOverflowX">
-
-      <section class="intro-block-frame intro-block-paddings">
-        <div class="intersectionObserverPoint"></div>
-        <div class="global-wrapper">
-
-          <div class="intro-block-grid-box">
-
-            <div class="intro_block_description_box">
-              <img class="intro_block_hero_img_mobile" src="/src/resources/img/block1heroimageMobileReady2.png" alt="">
-              <img class="intro_block_hero_img" src="/src/resources/img/block1heroimageDesktopReady2.png" alt="">
-              <div class="intro-block-devider "></div>
-              <h1 class="intro-block-title global-title-text global-color-dark">Skills2Habits - Ваш партнер в обучении
-                и развитии персонала.</h1>
-              <p class="global-subtitle-text global-color-gray">
-                Мы помогаем людям превратить имеющиеся у них знания в действия,
-                направленные на выполнение бизнес-целей компании.</p>
+    <div class="loadingContentWrapper">
+      <nav class="nav-frame">
+        <div class="globalWrapper">
+          <div class="nav-box">
+            <div class="jiggleLogoFrame">
+              <span class="nav-logo-latter preventLogoJiggle">S</span>
+              <span class="nav-logo-latter">k</span>
+              <span class="nav-logo-latter">i</span>
+              <span class="nav-logo-latter">l</span>
+              <span class="nav-logo-latter">l</span>
+              <span class="nav-logo-latter">s</span>
+              &nbsp;
+              <span class="nav-logo-latter">2</span>
+              &nbsp;
+              <span class="nav-logo-latter">H</span>
+              <span class="nav-logo-latter">a</span>
+              <span class="nav-logo-latter">b</span>
+              <span class="nav-logo-latter">i</span>
+              <span class="nav-logo-latter">t</span>
+              <span class="nav-logo-latter">s</span>
             </div>
 
-            <div class="intro-block-button-box">
-              <div class="mainActionButton ibBtnPos"><a href="#">Заказать</a></div>
-              <div class="mainActionButton transparentButton"><a href="#">Подробнее</a></div>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-      <section class="aboutOurWork global-block-paddings">
-        <div class="global-wrapper">
-          <div class="aboutOurWorkImgBox">
-            <img class="aowDesktopImg" src="/src/resources/img/aboutOurWorkImg.png" alt="">
-            <img class="aowMobileImg" src="/src/resources/img/aboutOurWorkImgMobile3.png" alt="">
+            <ul>
+              <li>
+                <a aria-label="Услуги" class="nav-link" href="">услуги</a>
+              </li>
+              <li><a aria-label="О Нас" class="nav-link" href="">о нас</a></li>
+              <li>
+                <a aria-label="Контакты" class="nav-link" href="">контакты</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
+      </nav>
 
-      <!-- <section class="description-block description-block-paddings">
-        <div class="global-wrapper">
-          <div class="description-block-frame">
-            <div class="dscrAnimationTrigger"></div>
-            <div data-aos-anchor=".dscrAnimationTrigger" data-aos="fade-right" class="dscr-left-box">
-              <img class="dscr-illustration" src="./resources/img/ill-crowd-rdy3.png" alt="Иллюстрация презентации">
-              <img class="dscr-illustration-mobile" src="./resources/img/ill-crowd-rdy-mobile.png" alt="Иллюстрация презентации">
+      <main class="globalOverflowX">
+        <section class="intro-block-frame globalBlockPaddings">
+          <div class="intersectionObserverPoint"></div>
+          <div class="globalWrapper">
+            <div class="intro-block-grid-box">
+              <div class="intro_block_description_box">
+                <img
+                  class="intro_block_hero_img_mobile"
+                  src="/src/resources/img/block1heroimageMobileReady2.png"
+                  alt=""
+                />
+                <img
+                  class="intro_block_hero_img"
+                  src="/src/resources/img/block1heroimageDesktopReady4.png"
+                  alt=""
+                />
+                <div class="intro-block-devider"></div>
+                <h1 class="intro-block-title globalTitle globalBlackColor">
+                  Skills2Habits - Ваш партнер в обучении и развитии персонала.
+                </h1>
+                <p class="globalText globalBlackColor">
+                  Мы помогаем людям превратить имеющиеся у них знания в
+                  действия, направленные на выполнение бизнес-целей компании.
+                </p>
+              </div>
+
+              <div class="intro-block-button-box">
+                <div class="mainActionButton ibBtnPos">
+                  <a href="#">Заказать</a>
+                </div>
+                <div class="mainActionButton transparentButton">
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
             </div>
-            <div data-aos-anchor=".dscrAnimationTrigger" data-aos="fade-left" class="dscr-right-box">
-              <h2 class="global-title-text global-color-white descBlockTitle">Skills 2 Habits - это визуальная коммуникация вашей идеи</h2>
-              <p class="global-subtitle-text global-color-white">
-                Визуальное повествование Skills to Habits — это не просто иллюстрации, мы оживляем ваш
-                контент с помощью рисования.
-                Превратите свои идеи в простой для понимания рассказ, который поможет достичь ваших целей.
+          </div>
+        </section>
+
+        <div class="aboutOurWork">
+          <div class="globalWrapper">
+            <div class="aboutOurWorkImgBox">
+              <img
+                class="aowDesktopImg"
+                src="/src/resources/img/aboutOurWorkImg.png"
+                alt=""
+              />
+              <img
+                class="aowMobileImg"
+                src="/src/resources/img/aboutOurWorkImgMobile.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <section class="servicesBlock">
+          <h2
+            class="intro-block-title globalTitle globalBlackColor globalBlockPaddings"
+          >
+            Наши услуги
+          </h2>
+          <div class="globalWrapper">
+            <div class="servicesFlexFrame">
+              <div class="servicesLeftBox positionFixes">
+                <div class="servicesTextBox">
+                  <h3 class="globalTitle globalBlackColor">Бизнес-обучение</h3>
+                  <div class="servicesTextDevider"></div>
+                  <p class="globalSubtitle globalBlackColor">
+                    Вы руководите коммерческой организацией или производственным
+                    предприятием?
+                  </p>
+                  <p class="globalText globalGrayColor">
+                    Мы помогаем в процессах адаптации, обучения и полевого
+                    сопровождения персонала, опираясь на богатый опыт работы в
+                    области FMCG-продаж и HR.
+                  </p>
+                </div>
+              </div>
+
+              <div class="servicesRightBox">
+                <div class="vendorSwiperFrame">
+                  <div class="swiper swiperA swiperServices">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide swiperSlideServices">
+                        <img
+                          src="/src/resources/img/bussinesEd/whiteboard_planning_nm.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide swiperSlideServices">
+                        <img
+                          src="/src/resources/img/bussinesEd/problem_solving_nm.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide swiperSlideServices">
+                        <img
+                          src="/src/resources/img/bussinesEd/brainstorming_seesion_nm.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-pagination paginationA"></div>
+                  <div class="swiper-button-prev prevA"></div>
+                  <div class="swiper-button-next nextA"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="servicesFlexFrame globalBlockPaddings">
+              <div class="servicesLeftBox servicesPositionOrderLast">
+                <div class="vendorSwiperFrame">
+                  <div class="swiper swiperB swiperServices">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide swiperSlideServices">
+                        <img
+                          src="/src/resources/img/fasilSession/presentation.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide swiperSlideServices">
+                        <img
+                          src="/src/resources/img/fasilSession/presentation_slide.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide swiperSlideServices">
+                        <img
+                          src="/src/resources/img/fasilSession/visual_notes.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-pagination paginationB"></div>
+                  <div class="swiper-button-prev prevB"></div>
+                  <div class="swiper-button-next nextB"></div>
+                </div>
+              </div>
+
+              <div class="servicesRightBox positionFixes">
+                <div class="servicesTextBox">
+                  <h3 class="globalTitle globalBlackColor">
+                    Фасилитационные сессии
+                  </h3>
+                  <div class="servicesTextDevider"></div>
+                  <p class="globalSubtitle globalBlackColor">
+                    Поиск группового решения, ретроспектива проекта, выбор
+                    стратегического направления, брейнсторминг
+                  </p>
+                  <p class="globalText globalGrayColor">
+                    Мы фасилитируем процесс вплоть до уровня разработки планов
+                    действий. Ваша задача – воплотить планы в жизнь и
+                    наслаждаться результатами!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vualNotesFrame">
+            <div class="globalWrapper">
+              <div class="servicesFlexFrame globalBlockPaddings">
+                <div class="servicesLeftBox positionFixes">
+                  <div class="servicesTextBox">
+                    <h3 class="globalTitle globalWhiteColor">
+                      Визуальное мышление
+                    </h3>
+                    <div class="servicesTextDevider"></div>
+                    <p class="globalSubtitle globalWhiteColor">
+                      Рисунок – первый шаг для того, чтобы ваши смелые замыслы
+                      стали реальностью.
+                    </p>
+                    <p class="globalText globalWhiteColor">
+                      Мы поможем вам сделать ваши идеи понятными для других. Вы
+                      снова начнете рисовать и сможете удивить коллег визуальным
+                      резюме совещания или потрясающими слайдами!
+                    </p>
+                  </div>
+                </div>
+
+                <div class="servicesRightBox">
+                  <div class="vendorSwiperFrame">
+                    <div class="swiper swiperC swiperServices">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide swiperSlideServices">
+                          <img
+                            src="/src/resources/img/visualNotes/running_man_sketch.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="swiper-slide swiperSlideServices">
+                          <img
+                            src="/src/resources/img/visualNotes/marker_sketch.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="swiper-slide swiperSlideServices">
+                          <img
+                            src="/src/resources/img/visualNotes/drawing_trenning.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="swiper-slide swiperSlideServices">
+                          <img
+                            src="/src/resources/img/visualNotes/house_sketch.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="swiper-slide swiperSlideServices">
+                          <img
+                            src="/src/resources/img/visualNotes/whiteboard_drawing_session.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-pagination paginationC"></div>
+                    <div class="swiper-button-prev prevC"></div>
+                    <div class="swiper-button-next nextC"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="servicesDescriptionBox">
+                <h3 class="globalTitle globalWhiteColor">
+                  Визуальная коммуникация идеи
+                </h3>
+              </div>
+
+              <div class="servicesGalleryFrame">
+                <div class="servicesGalleryLeftBox">
+                  <div class="servDualBoxL">
+                    <div class="box boxSmL"></div>
+                    <div class="box boxSmR"></div>
+                  </div>
+
+                  <div class="boxBig boxBigL"></div>
+                </div>
+
+                <div class="servicesGalleryRightBox">
+                  <div class="boxBig boxBigR"></div>
+
+                  <div class="servDualBoxR">
+                    <div class="box boxSmL"></div>
+                    <div class="box boxSmR"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="whyUsBlock">
+          <h2
+            class="intro-block-title globalTitle globalBlackColor globalBlockPaddings"
+          >
+            Вы в хороших руках!
+          </h2>
+
+          <div class="whyUsFrame">
+            <div class="whyUsCard">
+              <img src="/src/resources/img/details.png" alt="" />
+              <h3 class="globalTitle globalBlackColor">Внимание к деталям</h3>
+              <p class="globalText globalGrayColor">
+                Мы тщательно уточняем ваш запрос, поэтому обучающие программы
+                направлены точечно на развитие конкретных навыков.
+              </p>
+            </div>
+
+            <div class="whyUsCard">
+              <img src="/src/resources/img/inTime.png" alt="" />
+              <h3 class="globalTitle globalBlackColor">Сопровождение</h3>
+              <p class="globalText globalGrayColor">
+                В течение шести месяцев после завершения обучающей программы вы
+                можетеобращаться к нам за советом или консультацией. Это
+                бесплатно!
+              </p>
+            </div>
+
+            <div class="whyUsCard">
+              <img src="/src/resources/img/personalApproach.png" alt="" />
+              <h3 class="globalTitle globalBlackColor krivoiKostil">
+                Индивидуальный подход
+              </h3>
+              <p class="globalText globalGrayColor">
+                Демонстрационные материалы для каждой обучающей программы
+                создаются вручную и только для вас. Вы можете оставить их себе и
+                использовать в дальнейшем.
               </p>
             </div>
           </div>
-        </div>
-        <div id="mscSlideTo"></div>
-      </section> -->
+        </section>
 
-      <!-- <section class="miscBlock miscBlockPaddings">
-
-        <div class="miskBlockAnimationFrame animationOnloadDelay">
-
-          <div id="mscBlock" class="miscAnimationTrigger"></div>
-          <div class="miscAnimationTriggerAOS"></div>
-
-          <div class="miskBlockIconScene">
-            <img class="mscHand" src="/src/resources/miscBlockAnimate/hand.png" alt="">
-            <img class="mscUnderline" src="/src/resources/miscBlockAnimate/underline.png" alt="">
-          </div>
-
-          <div class="miskBlockOrangeLayer"></div>
-          <div class="miskBlockBlueLayer"></div>
-          <div class="miskBlockPinkLayer"></div>
-          <div class="miskBlockUpperSlide"></div>
-
-        </div>
-
-        <div class="global-wrapper">
-          <div class="miscBlockFrame">
-
-            <div
-              data-aos-anchor=".miscAnimationTriggerAOS"
-              data-aos="fade-right"
-              data-aos-delay="4200"
-              class="mscLeftBox"
-            >
-              <h2 class="global-title-text global-color-black mscBlockTitle">Просто о сложном</h2>
-              <p class="global-subtitle-text global-color-black">
-                Визуальное повествование Skills to Habits — это не просто иллюстрации, мы оживляем ваш
-                контент с помощью рисования.
-                Превратите свои идеи в простой для понимания рассказ, который поможет достичь ваших целей.
-              </p>
-              <div class="mainActionButton"><a href="#mscBlock">Заказать</a></div>
+        <section class="feedbackBlock globalBlockPaddings">
+          <h2
+            class="intro-block-title globalTitle globalBlackColor globalBlockPaddings"
+          >
+            Что говорят наши клиенты.
+          </h2>
+          <div class="feedbackSwiperFrame">
+            <div class="swiper swiperD">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide_feedback">
+                  <div class="whyUsCard">
+                    <img src="/src/resources/img/personalApproach.png" alt="" />
+                    <h3 class="globalTitle globalBlackColor krivoiKostil">
+                      Индивидуальный подход
+                    </h3>
+                    <p class="globalText globalGrayColor">
+                      Демонстрационные материалы для каждой обучающей программы
+                      создаются вручную и только для вас. Вы можете оставить их
+                      себе и использовать в дальнейшем.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide_feedback">
+                  <div class="whyUsCard">
+                    <img src="/src/resources/img/personalApproach.png" alt="" />
+                    <h3 class="globalTitle globalBlackColor krivoiKostil">
+                      Индивидуальный подход
+                    </h3>
+                    <p class="globalText globalGrayColor">
+                      Демонстрационные материалы для каждой обучающей программы
+                      создаются вручную и только для вас. Вы можете оставить их
+                      себе и использовать в дальнейшем.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide_feedback">
+                  <div class="whyUsCard">
+                    <img src="/src/resources/img/inTime.png" alt="" />
+                    <h3 class="globalTitle globalBlackColor">Сопровождение</h3>
+                    <p class="globalText globalGrayColor">
+                      В течение шести месяцев после завершения обучающей
+                      программы вы можетеобращаться к нам за советом или
+                      консультацией. Это бесплатно!
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide_feedback">
+                  <div class="whyUsCard">
+                    <img src="/src/resources/img/personalApproach.png" alt="" />
+                    <h3 class="globalTitle globalBlackColor krivoiKostil">
+                      Индивидуальный подход
+                    </h3>
+                    <p class="globalText globalGrayColor">
+                      Демонстрационные материалы для каждой обучающей программы
+                      создаются вручную и только для вас. Вы можете оставить их
+                      себе и использовать в дальнейшем.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide_feedback">
+                  <div class="whyUsCard">
+                    <img src="/src/resources/img/inTime.png" alt="" />
+                    <h3 class="globalTitle globalBlackColor">Сопровождение</h3>
+                    <p class="globalText globalGrayColor">
+                      В течение шести месяцев после завершения обучающей
+                      программы вы можетеобращаться к нам за советом или
+                      консультацией. Это бесплатно!
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div
-              data-aos-anchor=".miscAnimationTriggerAOS"
-              data-aos="fade-in"
-              data-aos-delay="4800"
-              class="mscRightBox"
-            >
-              <img class="mscDoodle" src="/src/resources/img/doodle.png" alt="">
-              <img class="mscWoman" src="/src/resources/img/woman.png" alt="девушка в позе лотоса">
-            </div>
-
+            <div class="swiper-pagination paginationD"></div>
+            <div class="swiper-button-prev prevD"></div>
+            <div class="swiper-button-next nextD"></div>
           </div>
-        </div>
+        </section>
 
-      </section> -->
-
-      <section class="construction global-block-paddings">
-        <div class="upperTape"></div>
-        <h2 class="warnText global-color-white">Under Construction</h2>
-        <div class="lowerTape"></div>
-      </section>
-
-    </main>
-
-  </div>
-</body>
+        <section class="construction globalBlockPaddings">
+          <div class="upperTape"></div>
+          <h2 class="warnText globalBlackColor">Under Construction</h2>
+          <div class="lowerTape"></div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>

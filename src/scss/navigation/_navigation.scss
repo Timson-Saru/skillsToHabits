@@ -33,7 +33,7 @@
 
 .nav-link:after {
   position: absolute;
-  content: '';
+  content: "";
   transition: 0.3s;
   height: 1px;
   width: 0;
@@ -69,8 +69,8 @@
 //Navigation scrolled styles
 
 .nav-box-scrolled {
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  // -webkit-backdrop-filter: blur(5px);
+  // backdrop-filter: blur(5px);
   padding: 7px 0 7px 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -78,7 +78,8 @@
 
 .nav-frame-scrolled {
   border-bottom: 1px solid #4f5050;
-  background: #151414cc;
+  // background: #151414cc;
+  background: #151414f5;
 }
 
 .nav-link-scrolled {

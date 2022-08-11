@@ -1,5 +1,4 @@
 .intro-block-frame {
-  background: #fafafa;
   position: relative;
 }
 
@@ -8,18 +7,6 @@
   width: 50px;
   position: absolute;
   top: 0px;
-}
-
-.intro-block-frame::after {
-  content: '';
-  height: 30px;
-  width: 100%;
-  background: url('../resources/img/paper-border.png');
-  background-size: contain;
-  margin-bottom: -29px;
-  z-index: 2;
-  position: absolute;
-  bottom: 0;
 }
 
 .intro-block-paddings {
@@ -63,6 +50,7 @@
 
   p {
     width: 83%;
+    margin-top: 25px;
   }
 }
 
@@ -78,10 +66,10 @@
 }
 
 .intro-block-title {
-  margin-bottom: 25px;
   text-align: center;
   line-height: 110%;
   font-weight: 700;
+  font-size: 2.7rem;
 }
 
 .intro-block-devider {
@@ -103,6 +91,12 @@
   margin-right: 20px;
 }
 
+@media (max-width: 800px) {
+  .intro-block-title {
+    font-size: 2.3rem;
+  }
+}
+
 @media (max-width: 550px) {
   .intro_block_hero_img_mobile {
     width: 100%;
@@ -118,6 +112,10 @@
 @media (max-width: 530px) {
   .intro-block-paddings {
     padding: 50px 0 50px 0;
+  }
+
+  .intro-block-title {
+    font-size: 2rem;
   }
 }
 
@@ -143,9 +141,4 @@
   .intro-block-action-button {
     margin-right: 0;
   }
-}
-
-.introAnimationTrigger {
-  position: absolute;
-  top: 0;
 }

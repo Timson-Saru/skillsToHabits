@@ -1,7 +1,5 @@
 .construction {
   min-height: 500px;
-  background: rgb(167, 167, 167);
-  margin-top: -45px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -17,21 +15,19 @@
   -moz-box-pack: center;
   justify-content: center;
   text-align: center;
-  -webkit-clip-path: polygon(35% 1%, 54% 4%, 67% 1%, 85% 4%, 100% 0, 100% 15%, 100% 85%, 100% 100%, 84% 100%, 0 100%, 0 0, 17% 5%);
-  clip-path: polygon(35% 1%, 54% 4%, 67% 1%, 85% 4%, 100% 0, 100% 15%, 100% 85%, 100% 100%, 84% 100%, 0 100%, 0 0, 17% 5%);
 }
 
 .upperTape {
   height: 15px;
   width: 100%;
-  background: url('/src/resources/img/conTape.jpg');
+  background: url("/src/resources/img/conTape.jpg");
   background-size: auto 100%;
 }
 
 .lowerTape {
   height: 15px;
   width: 100%;
-  background: url('/src/resources/img/conTape.jpg');
+  background: url("/src/resources/img/conTape.jpg");
   background-size: auto 100%;
 }
 

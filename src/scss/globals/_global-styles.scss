@@ -1,4 +1,4 @@
-@use '/src/scss/animations/_desktopLoadingSpinner.scss';
+@use "/src/scss/animations/_desktopLoadingSpinner.scss";
 
 .animationOnloadDelay *,
 .animationOnloadDelay *:before,
@@ -8,7 +8,7 @@
 
 html {
   font-size: 16px;
-  font-family: 'montserrat';
+  font-family: "montserrat";
   scroll-behavior: smooth;
 }
 
@@ -68,7 +68,7 @@ html {
   transition: ease-in 0.5s;
 }
 
-.global-wrapper {
+.globalWrapper {
   max-width: 1530px;
   padding-left: 15px;
   padding-right: 15px;
@@ -78,53 +78,59 @@ html {
   margin-right: auto;
 }
 
-.global-block-paddings {
+.globalBlockPaddings {
   padding: 100px 0 100px 0;
 }
 
-.global-color-dark {
+.globalBlackColor {
   color: rgb(15, 15, 15);
 }
 
-.global-color-gray {
+.globalGrayColor {
   color: rgb(78, 78, 78);
 }
 
-.global-color-white {
+.globalWhiteColor {
   color: white;
 }
 
-.global-title-text {
-  font-family: 'montserrat';
-  font-size: 2.5rem;
-  font-weight: 500;
+.globalTitle {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
-.global-subtitle-text {
-  font-family: 'montserrat';
+.globalSubtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.globalText {
   font-size: 1.2rem;
   font-weight: 300;
 }
 
 @media (max-width: 670px) {
-  .global-subtitle-text {
+  .globalText {
     font-size: 1rem;
   }
 
-  .global-title-text {
-    font-size: 2rem;
+  .globalBlockPaddings {
+    padding: 50px 0 50px 0;
   }
 }
 
 @media (max-width: 535px) {
-  .global-title-text {
+  .globalTitle {
     font-size: 1.4rem;
   }
 }
 
-@media (max-width: 390px) {
-  .global-title-text {
-    font-size: 1.1rem;
+@media (max-width: 510px) {
+  .mainActionButton {
+    a {
+      padding: 12px;
+    }
   }
 }
 
@@ -132,5 +138,15 @@ html {
   body {
     -webkit-animation: none !important;
     animation: none !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .globalTitle {
+    font-size: 1.3rem;
+  }
+
+  .globalSubtitle {
+    font-size: 1rem;
   }
 }
