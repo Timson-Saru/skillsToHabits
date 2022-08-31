@@ -1,0 +1,62 @@
+.formBlock {
+  background: black;
+  clip-path: polygon(
+    0 0,
+    20% 2%,
+    39% 1%,
+    56% 3%,
+    73% 0,
+    91% 2%,
+    100% 0%,
+    100% 100%,
+    81% 98%,
+    62% 99%,
+    43% 97%,
+    25% 99%,
+    12% 98%,
+    0% 100%
+  );
+  padding-bottom: 100px;
+}
+
+.formBlockTitle {
+  margin-bottom: 100px;
+}
+
+.formBlockBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .formSubmitBtn {
+    margin: 15px;
+    max-height: 58px;
+    display: flex;
+    align-items: center;
+  }
+  .formInnerWrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  input {
+    padding: 20px;
+    border-radius: 4px;
+    padding-left: 49px;
+    max-width: 200px;
+  }
+}
+
+.inputWithIcon {
+  position: relative;
+  margin: 15px;
+}
+
+.formIcon {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 28%;
+  left: 7%;
+  color: rgb(168, 168, 168);
+}

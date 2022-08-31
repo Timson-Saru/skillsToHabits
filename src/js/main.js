@@ -47,13 +47,29 @@ const swiperVisualNotes = new Swiper('.swiperC', {
 
 const swiperFeedback = new Swiper('.swiperD', {
   slidesPerView: 3,
-  loop: true,
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 70
+    },
+
+    800: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+
+    100: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    }
+  },
+  // loop: true,
   pagination: {
     el: '.paginationD',
     clickable: true,
-    type: 'bullets'
+    // type: 'fraction',
+    dynamicBullets: true
   },
-  spaceBetween: 25,
   speed: 800,
   navigation: {
     nextEl: '.nextD',
