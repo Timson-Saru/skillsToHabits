@@ -97,7 +97,7 @@
 
               <div class="intro-block-button-box">
                 <div class="mainActionButton ibBtnPos">
-                  <a href="#">Заказать</a>
+                  <a href="#formBlock">Заказать</a>
                 </div>
                 <div class="mainActionButton transparentButton">
                   <a href="#">Подробнее</a>
@@ -586,30 +586,39 @@
           </div>
         </section>
 
-        <section class="formBlock">
+        <section id="formBlock">
           <div class="globalWrapper">
             <h2 class="globalBlockPaddings intro-block-title globalWhiteColor">
               Хотите заказать услугу или узнать подробнее ?
             </h2>
-            <form class="formBlockBody" action="">
+
+            <form id="form" class="formBlockBody">
               <div class="formInnerWrapper">
                 <div class="inputWithIcon">
-                  <input type="text" placeholder="Имя" />
+                  <div class="formErrorTooltip"></div>
+                  <input type="text" placeholder="Имя" name="name" />
                   <div class="formIcon fa-solid fa-user"></div>
                 </div>
+
                 <div class="inputWithIcon">
-                  <input type="text" placeholder="Почта" />
+                  <div class="formErrorTooltip"></div>
+                  <input type="text" placeholder="Почта" name="mail" />
                   <div class="formIcon fa-solid fa-envelope"></div>
                 </div>
+
                 <div class="inputWithIcon">
-                  <input type="phone" placeholder="Телефон" />
+                  <div class="formErrorTooltip"></div>
+                  <input
+                    id="phoneInput"
+                    type="phone"
+                    placeholder="Телефон"
+                    name="phone"
+                  />
                   <div class="formIcon fa-solid fa-phone"></div>
                 </div>
               </div>
 
-              <div type="submit" class="formSubmitBtn mainActionButton">
-                <a href="#">Заказать</a>
-              </div>
+              <button class="formSubmitBtn mainActionButton">Заказать</button>
             </form>
           </div>
         </section>

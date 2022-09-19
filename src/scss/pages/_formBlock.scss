@@ -1,4 +1,4 @@
-.formBlock {
+#formBlock {
   background: black;
   clip-path: polygon(
     0 0,
@@ -30,10 +30,13 @@
   flex-wrap: wrap;
 
   .formSubmitBtn {
-    margin: 15px;
+    margin: 15px 15px 30px 15px;
     max-height: 58px;
     display: flex;
+    padding: 20px;
+    width: 200px;
     align-items: center;
+    font-size: 1rem;
   }
   .formInnerWrapper {
     display: flex;
@@ -45,18 +48,52 @@
     border-radius: 4px;
     padding-left: 49px;
     max-width: 200px;
+    border: solid 2px transparent;
+  }
+  .validationFailed {
+    border: solid 2px rgb(245, 97, 97);
   }
 }
 
 .inputWithIcon {
   position: relative;
-  margin: 15px;
+  margin: 15px 15px 30px 15px;
 }
 
 .formIcon {
   position: absolute;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   top: 28%;
   left: 7%;
   color: rgb(168, 168, 168);
+}
+.formErrorIcon {
+  color: rgb(230, 50, 50);
+}
+.formBlockBody input:focus {
+  outline: transparent;
+}
+
+.formErrorTooltip {
+  color: rgb(230, 50, 50);
+  font-size: 14px;
+  font-weight: 300;
+  position: absolute;
+  top: -45%;
+}
+
+@media (max-width: 507px) {
+  .formBlockBody {
+    .inputWithIcon {
+      width: 100%;
+    }
+
+    input {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  .formIcon {
+    left: 4%;
+  }
 }

@@ -2,6 +2,7 @@ import { initNavObserver } from './animation/intersectionObservers.js'
 import isMobileDevice from './helpers/checkMobile.js'
 import AOS from 'aos/dist/aos.js'
 import Swiper from '/node_modules/swiper/swiper-bundle.js'
+import formValidation from './helpers/formValidation.js'
 
 const swiperBussinesEd = new Swiper('.swiperA', {
   pagination: {
@@ -16,6 +17,8 @@ const swiperBussinesEd = new Swiper('.swiperA', {
     prevEl: '.prevA'
   }
 })
+
+// swiperBussinesEd.slideTo(1, 100, false)
 
 const swiperfassilSessions = new Swiper('.swiperB', {
   pagination: {
@@ -79,7 +82,6 @@ const swiperFeedback = new Swiper('.swiperD', {
 
 if (isMobileDevice()) {
   document.querySelector('.spinnerBackground').remove()
-  document.querySelector('.miskBlockAnimationFrame').remove()
   document.body.tabIndex = 0 // fix for IOS hover effect on tap
   AOS.init({ disable: 'mobile' })
 } else {
@@ -91,6 +93,15 @@ if (isMobileDevice()) {
   content.classList.add('hideContentWhileLoading')
 
   function contentReady() {
+    // document
+    //   .querySelector('#phoneInput')
+    //   .addEventListener('beforeinput', (e) => {
+    //     e.target.value = e.target.value.replace(/([^0-9])+/i, '')
+    //   })
+    document.querySelector('#form').addEventListener('submit', (e) => {
+      e.preventDefault()
+      console.log(formValidation())
+    })
     spinner.style.display = 'none'
     body.style.overflowY = 'auto'
     content.classList.remove('hideContentWhileLoading')
