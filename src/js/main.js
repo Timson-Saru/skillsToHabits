@@ -18,8 +18,6 @@ const swiperBussinesEd = new Swiper('.swiperA', {
   }
 })
 
-// swiperBussinesEd.slideTo(1, 100, false)
-
 const swiperfassilSessions = new Swiper('.swiperB', {
   pagination: {
     el: '.paginationB',
@@ -80,6 +78,25 @@ const swiperFeedback = new Swiper('.swiperD', {
   }
 })
 
+const swiperExtraVisualNotes = new Swiper('.swiperE', {
+  pagination: {
+    el: '.paginationE',
+    clickable: true,
+    type: 'bullets'
+  },
+  spaceBetween: 25,
+  speed: 800,
+  navigation: {
+    nextEl: '.nextE',
+    prevEl: '.prevE'
+  }
+})
+
+const visualNotesFrame = document.querySelector('.servicesGalleryFrame')
+visualNotesFrame.addEventListener('click', function (e) {
+  swiperExtraVisualNotes.slideTo(Number(e.target.dataset.slide), 100, false)
+})
+
 if (isMobileDevice()) {
   document.querySelector('.spinnerBackground').remove()
   document.body.tabIndex = 0 // fix for IOS hover effect on tap
@@ -88,16 +105,12 @@ if (isMobileDevice()) {
   const content = document.querySelector('.loadingContentWrapper')
   const spinner = document.querySelector('.spinnerBackground')
   const body = document.querySelector('body')
+
   spinner.style.display = 'flex'
   body.style.overflowY = 'hidden'
   content.classList.add('hideContentWhileLoading')
 
   function contentReady() {
-    // document
-    //   .querySelector('#phoneInput')
-    //   .addEventListener('beforeinput', (e) => {
-    //     e.target.value = e.target.value.replace(/([^0-9])+/i, '')
-    //   })
     document.querySelector('#form').addEventListener('submit', (e) => {
       e.preventDefault()
       console.log(formValidation())
