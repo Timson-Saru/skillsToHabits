@@ -79,6 +79,7 @@ const swiperFeedback = new Swiper('.swiperD', {
 })
 
 const swiperExtraVisualNotes = new Swiper('.swiperE', {
+  allowTouchMove: false,
   pagination: {
     el: '.paginationE',
     clickable: true,
@@ -92,9 +93,22 @@ const swiperExtraVisualNotes = new Swiper('.swiperE', {
   }
 })
 
-const visualNotesFrame = document.querySelector('.servicesGalleryFrame')
-visualNotesFrame.addEventListener('click', function (e) {
-  swiperExtraVisualNotes.slideTo(Number(e.target.dataset.slide), 100, false)
+const servicesGalleryFrame = document.querySelector('.servicesGalleryFrame')
+const overlayBody = document.querySelector('.servicesOverlay')
+const overlayCloseBtn = document.querySelector('.overlayCloseBtn')
+overlayBody.addEventListener('click', function (e) {
+  if (e.target === overlayCloseBtn || e.target === overlayBody) {
+    overlayBody.classList.remove('showServicesOverlay')
+    document.querySelector('body').classList.remove('blockBodyScroll')
+  }
+})
+
+servicesGalleryFrame.addEventListener('click', function (e) {
+  if (e.target.dataset.slide) {
+    document.querySelector('body').classList.add('blockBodyScroll')
+    overlayBody.classList.add('showServicesOverlay')
+    swiperExtraVisualNotes.slideTo(Number(e.target.dataset.slide), 100, false)
+  }
 })
 
 if (isMobileDevice()) {
@@ -107,7 +121,8 @@ if (isMobileDevice()) {
   const body = document.querySelector('body')
 
   spinner.style.display = 'flex'
-  body.style.overflowY = 'hidden'
+  // body.style.overflowY = 'hidden'
+  body.classList.add('blockBodyScroll')
   content.classList.add('hideContentWhileLoading')
 
   function contentReady() {
@@ -116,7 +131,8 @@ if (isMobileDevice()) {
       console.log(formValidation())
     })
     spinner.style.display = 'none'
-    body.style.overflowY = 'auto'
+    // body.style.overflowY = 'auto'
+    body.classList.remove('blockBodyScroll')
     content.classList.remove('hideContentWhileLoading')
     content.classList.add('showContentWhenLoaded')
 

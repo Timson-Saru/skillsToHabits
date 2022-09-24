@@ -13,7 +13,7 @@
 .swiperSlideServices {
   cursor: grab;
   user-select: none;
-  line-height: 0;
+  // line-height: 0;
 
   img {
     border-radius: 10px;
@@ -80,6 +80,30 @@
 .swiper-pagination-bullet {
   height: 8px;
   width: 8px;
+}
+
+.visualNotesSwiperFrame {
+  max-width: 90%;
+}
+
+.visualNotesSwiperServices {
+  // background: red;
+  max-width: 2000px;
+  min-width: 300px;
+  border-radius: 4px;
+}
+
+.paginationE {
+  bottom: -5% !important;
+}
+
+.visualNotesSwiper-wrapper {
+}
+
+.visualNotesSwiperSlideServices {
+  display: flex;
+  justify-content: center;
+  cursor: auto;
 }
 
 @media (max-width: 600px) {

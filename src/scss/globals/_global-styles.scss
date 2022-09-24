@@ -1,4 +1,4 @@
-@use "/src/scss/animations/_desktopLoadingSpinner.scss";
+@use '/src/scss/animations/_desktopLoadingSpinner.scss';
 
 .animationOnloadDelay *,
 .animationOnloadDelay *:before,
@@ -8,8 +8,12 @@
 
 html {
   font-size: 16px;
-  font-family: "montserrat";
+  font-family: 'montserrat';
   scroll-behavior: smooth;
+}
+
+.blockBodyScroll {
+  overflow-y: hidden;
 }
 
 .mainActionButton {
