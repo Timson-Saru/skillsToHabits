@@ -1,6 +1,12 @@
 .swiperD {
   max-width: 85%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
   align-items: center;
   padding: 30px 0;
   border-top: 1px grey solid;
@@ -9,10 +15,20 @@
 
 .feedbackCard {
   max-width: 380px;
-
   text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
   flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
   align-items: center;
   padding: 0 5px;
   margin-bottom: 0px;
@@ -28,6 +44,7 @@
   }
 
   img {
+    -webkit-transition: 0.3s;
     transition: 0.3s;
     max-width: 300px;
     margin-bottom: 0;
@@ -65,8 +82,15 @@
 }
 
 .feedbackGridBox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
   justify-content: center;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -74,8 +98,17 @@
   max-width: 300px;
   min-width: 150px;
   margin: 0 15px 30px 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
   align-items: center;
   img {
     width: 100%;

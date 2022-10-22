@@ -1,5 +1,11 @@
 .servicesFlexFrame {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -moz-box-pack: space-evenly;
   justify-content: space-evenly;
 }
 
@@ -14,6 +20,20 @@
 
 .vsualNotesFrame {
   background: black;
+  -webkit-clip-path: polygon(
+    0 0,
+    23% 4%,
+    46% 2%,
+    67% 4%,
+    86% 2%,
+    100% 0,
+    100% 99%,
+    76% 97%,
+    52% 99%,
+    33% 97%,
+    16% 99%,
+    0% 100%
+  );
   clip-path: polygon(
     0 0,
     23% 4%,
@@ -33,24 +53,50 @@
 
 .servicesLeftBox {
   width: 40%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
   justify-content: center;
 }
 
 .servicesRightBox {
   width: 40%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
   justify-content: center;
 }
 
 .positionFixes {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-box-pack: end;
   justify-content: flex-end;
 }
 
 .servicesTextBox {
   max-width: 550px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
   justify-content: center;
 }
 
@@ -68,10 +114,16 @@
 .servicesGalleryFrame {
   max-width: 1200px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
   justify-content: center;
   gap: 25px;
-  padding-top: 50px;
+  padding-top: 0;
 }
 
 .leftFrame {
@@ -90,6 +142,7 @@
   position: relative;
   border-radius: 4px;
   margin-bottom: 25px;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   overflow: hidden;
 }
@@ -100,7 +153,9 @@
   padding: 20px;
   width: 100%;
   bottom: 0;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
+  -webkit-transform: translateY(90px);
   transform: translateY(90px);
 }
 
@@ -120,32 +175,40 @@
   top: 0;
   height: 100%;
   width: 100%;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   pointer-events: none;
   opacity: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
   justify-content: center;
-  // .servicesWrapper {
-  //   max-width: 1500px;
-  //   background: rgb(34, 202, 70);
-  // }
 
   .fa-times-circle {
     font-size: 2.3rem;
     cursor: pointer;
-    transition: all 0.5s;
     position: absolute;
     right: 5.9%;
     top: -8%;
   }
-  .fa-times-circle:hover {
-    transform: scale(1.1);
-  }
 }
 
 .visualNotesFrame {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
   justify-content: center;
   max-width: 1500px;
   .vsImageBox {
@@ -154,8 +217,19 @@
     background: floralwhite;
   }
   .vsTextBox {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
     justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
     flex-direction: column;
     width: 30%;
     color: white;
@@ -165,6 +239,19 @@
     border-radius: 4px;
     margin-left: -58px;
     padding-left: 79px;
+    -webkit-clip-path: polygon(
+      11% 0,
+      9% 14%,
+      13% 26%,
+      9% 39%,
+      12% 57%,
+      11% 69%,
+      9% 82%,
+      10% 93%,
+      8% 100%,
+      100% 100%,
+      100% 0
+    );
     clip-path: polygon(
       11% 0,
       9% 14%,
@@ -186,17 +273,47 @@
   }
 }
 
+.visualNotesImageDevider {
+  height: 400px;
+  width: 100%;
+  background: url('/src/resources/img/dualEducationUzbekistan.jpg') 50% -7%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (max-width: 1265px) {
   .visualNotesFrame {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
     flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
     justify-content: center;
     .vsImageBox {
       max-width: 80%;
     }
     .vsTextBox {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
       display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
       justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-box-orient: vertical;
+      -moz-box-direction: normal;
       flex-direction: column;
       width: 80%;
       color: white;
@@ -204,9 +321,20 @@
       margin-left: 0;
       margin-top: -15px;
       padding: 20px;
-      // padding-top: 70px;
       border: solid 1px white;
       border-radius: 4px;
+
+      -webkit-clip-path: polygon(
+        0 0,
+        19% 2%,
+        39% 0,
+        57% 3%,
+        74% 0,
+        86% 2%,
+        100% 2%,
+        100% 100%,
+        0 100%
+      );
 
       clip-path: polygon(
         0 0,
@@ -235,35 +363,39 @@
 }
 
 .presentation1 {
-  background: url('/src/resources/img/visualNotes/extraDemo/selfimprovementPresentation1.jpg');
+  background: url('/src/resources/img/visualNotes/extraDemo/selfimprovementPresentation.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .presentation2 {
-  background: url('/src/resources/img/visualNotes/extraDemo/DPpresentation2.jpg');
+  background: url('/src/resources/img/visualNotes/extraDemo/DPpresentation.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .presentation3 {
-  background: url('/src/resources/img/visualNotes/extraDemo/designerFearsPresentation3.jpg');
+  background: url('/src/resources/img/visualNotes/extraDemo/designerFearsPresentation.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .presentation4 {
-  background: url('/src/resources/img/visualNotes/extraDemo/differancesGDvsDPPresentation4.jpg');
+  background: url('/src/resources/img/visualNotes/extraDemo/differancesGDvsDPPresentation.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .visualBoxFrame:hover {
+  -webkit-transition: 0.3s;
   transition: 0.3s;
+  -webkit-transform: translateY(-5px) translateX(-5px);
   transform: translateY(-5px) translateX(-5px);
 
   .vbHoverOverlay {
+    -webkit-transition: 0.2s;
     transition: 0.2s;
+    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
@@ -273,14 +405,28 @@
     margin: 0 auto 25px auto;
   }
   .servicesPositionOrderLast {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -moz-box-ordinal-group: 3;
     order: 2;
   }
   .servicesFlexFrame {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
     flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
     align-items: center;
   }
 
   .servicesTextBox {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
     align-items: center;
     text-align: center;
     margin-bottom: 25px;
@@ -289,20 +435,31 @@
 
   .servicesLeftBox {
     width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
     justify-content: center;
   }
 
   .servicesRightBox {
     width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
     justify-content: center;
   }
 }
 
 @media (max-width: 800px) {
+  .servicesDescriptionBox {
+    display: none;
+  }
   .servicesGalleryFrame {
-    flex-direction: column;
-    align-items: center;
+    display: none;
   }
 
   .rightFrame {
@@ -317,6 +474,18 @@
   }
 
   .vsualNotesFrame {
+    -webkit-clip-path: polygon(
+      0 0,
+      25% 1%,
+      50% 0,
+      73% 1%,
+      100% 0,
+      100% 100%,
+      74% 99%,
+      50% 100%,
+      24% 99%,
+      0 100%
+    );
     clip-path: polygon(
       0 0,
       25% 1%,

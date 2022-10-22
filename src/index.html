@@ -15,6 +15,10 @@
       src="https://kit.fontawesome.com/fa492277aa.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script type="module" src="./js/main.js"></script>
   </head>
 
@@ -38,31 +42,40 @@
       <nav class="nav-frame">
         <div class="globalWrapper">
           <div class="nav-box">
-            <div class="jiggleLogoFrame">
-              <span class="nav-logo-latter preventLogoJiggle">S</span>
-              <span class="nav-logo-latter">k</span>
-              <span class="nav-logo-latter">i</span>
-              <span class="nav-logo-latter">l</span>
-              <span class="nav-logo-latter">l</span>
-              <span class="nav-logo-latter">s</span>
-              &nbsp;
-              <span class="nav-logo-latter">2</span>
-              &nbsp;
-              <span class="nav-logo-latter">H</span>
-              <span class="nav-logo-latter">a</span>
-              <span class="nav-logo-latter">b</span>
-              <span class="nav-logo-latter">i</span>
-              <span class="nav-logo-latter">t</span>
-              <span class="nav-logo-latter">s</span>
-            </div>
-
+            <a class="navLogo" href="#scrollToTheTop">
+              <div class="jiggleLogoFrame">
+                <span class="nav-logo-latter">S</span>
+                <span class="nav-logo-latter">k</span>
+                <span class="nav-logo-latter">i</span>
+                <span class="nav-logo-latter">l</span>
+                <span class="nav-logo-latter">l</span>
+                <span class="nav-logo-latter">s</span>
+                &nbsp;
+                <span class="nav-logo-latter">2</span>
+                &nbsp;
+                <span class="nav-logo-latter">H</span>
+                <span class="nav-logo-latter">a</span>
+                <span class="nav-logo-latter">b</span>
+                <span class="nav-logo-latter">i</span>
+                <span class="nav-logo-latter">t</span>
+                <span class="nav-logo-latter">s</span>
+              </div>
+            </a>
             <ul>
               <li>
-                <a aria-label="Услуги" class="nav-link" href="">услуги</a>
+                <a aria-label="Услуги" class="nav-link" href="#servicesBlock">
+                  услуги
+                </a>
               </li>
-              <li><a aria-label="О Нас" class="nav-link" href="">о нас</a></li>
               <li>
-                <a aria-label="Контакты" class="nav-link" href="">контакты</a>
+                <a aria-label="О Нас" class="nav-link" href="#feedBackSection"
+                  >отзывы</a
+                >
+              </li>
+              <li>
+                <a aria-label="Контакты" class="nav-link" href="#formBlock"
+                  >заказать</a
+                >
               </li>
             </ul>
           </div>
@@ -70,19 +83,22 @@
       </nav>
 
       <main class="globalOverflowX">
-        <section class="intro-block-frame globalBlockPaddings">
+        <section
+          id="scrollToTheTop"
+          class="intro-block-frame globalBlockPaddings"
+        >
           <div class="intersectionObserverPoint"></div>
           <div class="globalWrapper">
             <div class="intro-block-grid-box">
               <div class="intro_block_description_box">
                 <img
                   class="intro_block_hero_img_mobile"
-                  src="/src/resources/img/block1heroimageMobileReady2.png"
+                  src="/src/resources/img/block1heroimageMobileReady.png"
                   alt=""
                 />
                 <img
                   class="intro_block_hero_img"
-                  src="/src/resources/img/block1heroimageDesktopReady4.png"
+                  src="/src/resources/img/block1heroimageDesktopReady.png"
                   alt=""
                 />
                 <div class="intro-block-devider"></div>
@@ -100,7 +116,7 @@
                   <a href="#formBlock">Заказать</a>
                 </div>
                 <div class="mainActionButton transparentButton">
-                  <a href="#">Подробнее</a>
+                  <a href="#servicesBlock">Подробнее</a>
                 </div>
               </div>
             </div>
@@ -136,7 +152,7 @@
                   <div class="visualNotesFrame">
                     <div class="vsImageBox">
                       <img
-                        src="/src/resources/img/visualNotes/extraDemo/selfimprovementPresentation1.jpg"
+                        src="/src/resources/img/visualNotes/extraDemo/selfimprovementPresentation.jpg"
                         alt=""
                       />
                     </div>
@@ -158,7 +174,7 @@
                   <div class="visualNotesFrame">
                     <div class="vsImageBox">
                       <img
-                        src="/src/resources/img/visualNotes/extraDemo/DPpresentation2.jpg"
+                        src="/src/resources/img/visualNotes/extraDemo/DPpresentation.jpg"
                         alt=""
                       />
                     </div>
@@ -180,7 +196,7 @@
                   <div class="visualNotesFrame">
                     <div class="vsImageBox">
                       <img
-                        src="/src/resources/img/visualNotes/extraDemo/designerFearsPresentation3.jpg"
+                        src="/src/resources/img/visualNotes/extraDemo/designerFearsPresentation.jpg"
                         alt=""
                       />
                     </div>
@@ -202,7 +218,7 @@
                   <div class="visualNotesFrame">
                     <div class="vsImageBox">
                       <img
-                        src="/src/resources/img/visualNotes/extraDemo/differancesGDvsDPPresentation4.jpg"
+                        src="/src/resources/img/visualNotes/extraDemo/differancesGDvsDPPresentation.jpg"
                         alt=""
                       />
                     </div>
@@ -226,7 +242,7 @@
             <div class="swiper-button-next nextE"></div>
           </div>
         </div>
-        <section class="servicesBlock">
+        <section id="servicesBlock">
           <h2
             class="intro-block-title globalTitle globalBlackColor globalBlockPaddings"
           >
@@ -333,7 +349,7 @@
               </div>
             </div>
           </div>
-          <div class="vsualNotesFrame">
+          <div class="vsualNotesFrame globalBlockPaddings">
             <div class="globalWrapper">
               <div class="servicesFlexFrame globalBlockPaddings">
                 <div class="servicesLeftBox positionFixes">
@@ -360,7 +376,19 @@
                       <div class="swiper-wrapper">
                         <div class="swiper-slide swiperSlideServices">
                           <img
-                            src="/src/resources/img/visualNotes/running_man_sketch.jpg"
+                            src="/src/resources/img/visualNotes/workshop4.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="swiper-slide swiperSlideServices">
+                          <img
+                            src="/src/resources/img/visualNotes/overcomeFearPresentation.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="swiper-slide swiperSlideServices">
+                          <img
+                            src="/src/resources/img/visualNotes/whiteboard_drawing_session.jpg"
                             alt=""
                           />
                         </div>
@@ -372,19 +400,7 @@
                         </div>
                         <div class="swiper-slide swiperSlideServices">
                           <img
-                            src="/src/resources/img/visualNotes/drawing_trenning.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="swiper-slide swiperSlideServices">
-                          <img
-                            src="/src/resources/img/visualNotes/house_sketch.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="swiper-slide swiperSlideServices">
-                          <img
-                            src="/src/resources/img/visualNotes/whiteboard_drawing_session.jpg"
+                            src="/src/resources/img/visualNotes/running_man_sketch.jpg"
                             alt=""
                           />
                         </div>
@@ -397,14 +413,15 @@
                   </div>
                 </div>
               </div>
-
-              <div class="servicesDescriptionBox">
-                <h3 class="globalTitle globalWhiteColor">
-                  Визуальная коммуникация идеи
-                </h3>
-              </div>
-
-              <div class="servicesGalleryFrame">
+            </div>
+            <div class="visualNotesImageDevider"></div>
+            <div class="servicesDescriptionBox globalBlockPaddings">
+              <h3 class="globalTitle globalWhiteColor">
+                Визуальная коммуникация идеи
+              </h3>
+            </div>
+            <div class="globalWrapper">
+              <div class="servicesGalleryFrame globalBlockPaddings">
                 <div class="leftFrame">
                   <div data-slide="0" class="visualBoxFrame presentation1">
                     <div class="vbHoverOverlay">
@@ -558,8 +575,10 @@
                 />
               </div>
             </div>
+
             <h2
               class="intro-block-title globalTitle globalBlackColor globalBlockPaddings"
+              id="feedBackSection"
             >
               Отзывы.
             </h2>
@@ -607,96 +626,6 @@
                       />
                     </div>
                   </div>
-
-                  <div class="swiper-slide swiper-slide_feedback">
-                    <div class="whyUsCard feedbackCard">
-                      <h3 class="globalSubtitle globalBlackColor">BERICAP</h3>
-                      <p class="globalText globalGrayColor">
-                        There are many variations of passages of Lorem Ipsum
-                        available, but the majority have suffered alteration in
-                        some form, by injected humour,
-                      </p>
-                      <img src="/src/resources/img/logos/Bericap.png" alt="" />
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide swiper-slide_feedback">
-                    <div class="whyUsCard feedbackCard">
-                      <h3 class="globalSubtitle globalBlackColor">
-                        Enza Zaden
-                      </h3>
-                      <p class="globalText globalGrayColor">
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout. The point of using
-                      </p>
-                      <img
-                        src="/src/resources/img/logos/Enza_Zaden.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div class="swiper-slide swiper-slide_feedback">
-                    <div class="whyUsCard feedbackCard">
-                      <h3 class="globalSubtitle globalBlackColor">JTI</h3>
-                      <p class="globalText globalGrayColor">
-                        There are many variations of passages of Lorem Ipsum
-                        available, but the majority have suffered alteration in
-                        some form, by injected humour,
-                      </p>
-                      <img src="/src/resources/img/logos/JTI.png" alt="" />
-                    </div>
-                  </div>
-                  <div class="swiper-slide swiper-slide_feedback">
-                    <div class="whyUsCard feedbackCard">
-                      <h3 class="globalSubtitle globalBlackColor">AIGP</h3>
-                      <p class="globalText globalGrayColor">
-                        "de Finibus Bonorum et Malorum" by Cicero are also
-                        reproduced in their exact original form, accompanied by
-                        English versions from the 1914 translation by H.
-                        Rackham.
-                      </p>
-                      <img src="/src/resources/img/logos/AIGP.png" alt="" />
-                    </div>
-                  </div>
-                  <div class="swiper-slide swiper-slide_feedback">
-                    <div class="whyUsCard feedbackCard">
-                      <h3 class="globalSubtitle globalBlackColor">
-                        Halyk Bank
-                      </h3>
-                      <p class="globalText globalGrayColor">
-                        The standard chunk of Lorem Ipsum used since the 1500s
-                        is reproduced below for those interested. Sections
-                        1.10.32 and 1.10.33 from
-                      </p>
-                      <img
-                        src="/src/resources/img/logos/halyk-bank.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div class="swiper-slide swiper-slide_feedback">
-                    <div class="whyUsCard feedbackCard">
-                      <h3 class="globalSubtitle globalBlackColor">ITeachMe</h3>
-                      <p class="globalText globalGrayColor">
-                        There are many variations of passages of Lorem Ipsum
-                        available, but the majority have suffered alteration in
-                        some form, by injected humour
-                      </p>
-                      <img src="/src/resources/img/logos/ITeachMe.png" alt="" />
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide swiper-slide_feedback">
-                    <div class="whyUsCard feedbackCard">
-                      <h3 class="globalSubtitle globalBlackColor">Teva</h3>
-                      <p class="globalText globalGrayColor">
-                        1500s, when an unknown printer took a galley of type and
-                        scrambled it to make a type
-                      </p>
-                      <img src="/src/resources/img/logos/teva.png" alt="" />
-                    </div>
-                  </div>
                 </div>
               </div>
 
@@ -707,9 +636,9 @@
           </div>
         </section>
 
-        <section id="formBlock">
+        <section id="formBlock" class="globalBlockPaddings">
           <div class="globalWrapper">
-            <h2 class="globalBlockPaddings intro-block-title globalWhiteColor">
+            <h2 class="intro-block-title globalWhiteColor">
               Хотите заказать услугу или узнать подробнее ?
             </h2>
 
@@ -717,13 +646,17 @@
               <div class="formInnerWrapper">
                 <div class="inputWithIcon">
                   <div class="formErrorTooltip"></div>
-                  <input type="text" placeholder="Имя" name="name" />
+                  <input type="text" placeholder="Имя" name="customer_name" />
                   <div class="formIcon fa-solid fa-user"></div>
                 </div>
 
                 <div class="inputWithIcon">
                   <div class="formErrorTooltip"></div>
-                  <input type="text" placeholder="Почта" name="mail" />
+                  <input
+                    type="text"
+                    placeholder="Почта"
+                    name="customer_email"
+                  />
                   <div class="formIcon fa-solid fa-envelope"></div>
                 </div>
 
@@ -731,23 +664,37 @@
                   <div class="formErrorTooltip"></div>
                   <input
                     id="phoneInput"
-                    type="phone"
+                    type="text"
                     placeholder="Телефон"
-                    name="phone"
+                    name="customer_phone"
                   />
                   <div class="formIcon fa-solid fa-phone"></div>
                 </div>
               </div>
 
               <button class="formSubmitBtn mainActionButton">Заказать</button>
+              <div class="formSpinnerOverlay">
+                <div class="formSuccessBox">
+                  <i class="faMsgSuccess fas fa-check-circle"></i>
+                  <p class="globalSubtitle globalWhiteColor">
+                    Сообщение успешно отправлено.
+                  </p>
+                </div>
+
+                <div class="sk-cube-grid sk-form-cube-grid">
+                  <div class="sk-form-cube sk-cube sk-cube1"></div>
+                  <div class="sk-form-cube sk-cube sk-cube2"></div>
+                  <div class="sk-form-cube sk-cube sk-cube3"></div>
+                  <div class="sk-form-cube sk-cube sk-cube4"></div>
+                  <div class="sk-form-cube sk-cube sk-cube5"></div>
+                  <div class="sk-form-cube sk-cube sk-cube6"></div>
+                  <div class="sk-form-cube sk-cube sk-cube7"></div>
+                  <div class="sk-form-cube sk-cube sk-cube8"></div>
+                  <div class="sk-form-cube sk-cube sk-cube9"></div>
+                </div>
+              </div>
             </form>
           </div>
-        </section>
-
-        <section class="construction globalBlockPaddings">
-          <div class="upperTape"></div>
-          <h2 class="warnText globalBlackColor">Under Construction</h2>
-          <div class="lowerTape"></div>
         </section>
       </main>
     </div>

@@ -1,22 +1,30 @@
 #formBlock {
   background: black;
+  -webkit-clip-path: polygon(
+    0 0,
+    24% 3%,
+    43% 0,
+    64% 4%,
+    83% 1%,
+    100% 0,
+    100% 100%,
+    0 100%
+  );
   clip-path: polygon(
     0 0,
-    20% 2%,
-    39% 1%,
-    56% 3%,
-    73% 0,
-    91% 2%,
-    100% 0%,
+    24% 3%,
+    43% 0,
+    64% 4%,
+    83% 1%,
+    100% 0,
     100% 100%,
-    81% 98%,
-    62% 99%,
-    43% 97%,
-    25% 99%,
-    12% 98%,
-    0% 100%
+    0 100%
   );
-  padding-bottom: 100px;
+  padding-top: 150px;
+
+  h2 {
+    margin-bottom: 20px;
+  }
 }
 
 .formBlockTitle {
@@ -24,23 +32,118 @@
 }
 
 .formBlockBody {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
   align-items: center;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  position: relative;
+
+  .formSpinnerOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.932);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .showFormSpinner {
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  .formSuccessBox {
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity: 0;
+    pointer-events: none;
+    p {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+  .hideFormSpinner {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .showFormSuccessBox {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .faMsgSuccess {
+    color: greenyellow;
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+  }
 
   .formSubmitBtn {
     margin: 15px 15px 30px 15px;
     max-height: 58px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: flex;
     padding: 20px;
     width: 200px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
     align-items: center;
     font-size: 1rem;
   }
   .formInnerWrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
     justify-content: center;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   input {
@@ -52,6 +155,9 @@
   }
   .validationFailed {
     border: solid 2px rgb(245, 97, 97);
+  }
+  .validationSuccess {
+    border: solid 2px rgb(103, 216, 50);
   }
 }
 

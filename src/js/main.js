@@ -1,10 +1,9 @@
 import { initNavObserver } from './animation/intersectionObservers.js'
 import isMobileDevice from './helpers/checkMobile.js'
-import AOS from 'aos/dist/aos.js'
 import Swiper from '/node_modules/swiper/swiper-bundle.js'
 import formValidation from './helpers/formValidation.js'
 
-const swiperBussinesEd = new Swiper('.swiperA', {
+new Swiper('.swiperA', {
   pagination: {
     el: '.paginationA',
     clickable: true,
@@ -18,7 +17,7 @@ const swiperBussinesEd = new Swiper('.swiperA', {
   }
 })
 
-const swiperfassilSessions = new Swiper('.swiperB', {
+new Swiper('.swiperB', {
   pagination: {
     el: '.paginationB',
     clickable: true,
@@ -32,7 +31,7 @@ const swiperfassilSessions = new Swiper('.swiperB', {
   }
 })
 
-const swiperVisualNotes = new Swiper('.swiperC', {
+new Swiper('.swiperC', {
   pagination: {
     el: '.paginationC',
     clickable: true,
@@ -46,7 +45,7 @@ const swiperVisualNotes = new Swiper('.swiperC', {
   }
 })
 
-const swiperFeedback = new Swiper('.swiperD', {
+new Swiper('.swiperD', {
   slidesPerView: 3,
   breakpoints: {
     1200: {
@@ -64,11 +63,9 @@ const swiperFeedback = new Swiper('.swiperD', {
       spaceBetween: 20
     }
   },
-  // loop: true,
   pagination: {
     el: '.paginationD',
     clickable: true,
-    // type: 'fraction',
     dynamicBullets: true
   },
   speed: 800,
@@ -93,6 +90,56 @@ const swiperExtraVisualNotes = new Swiper('.swiperE', {
   }
 })
 
+emailjs.init('v0KTQg5IjAXxIAaoU')
+const formBody = document.querySelector('#form')
+const formInputs = formBody.elements
+document.querySelector('#form').addEventListener('submit', (e) => {
+  e.preventDefault()
+
+  if (!formValidation(formBody)) return
+
+  const serviceID = 'default_service'
+  const templateID = 'template_4jq3g9g'
+  document.querySelector('.formSpinnerOverlay').classList.add('showFormSpinner')
+  emailjs
+    .sendForm(serviceID, templateID, '.formBlockBody')
+    .then((response) => {
+      if (response.status === 200) {
+        document
+          .querySelector('.sk-form-cube-grid')
+          .classList.add('hideFormSpinner')
+        document
+          .querySelector('.formSuccessBox')
+          .classList.add('showFormSuccessBox')
+        for (let i = 0; i < formInputs.length; i++) {
+          if (
+            formInputs[i].nodeName === 'INPUT' &&
+            formInputs[i].type === 'text'
+          ) {
+            formInputs[i].classList.remove('validationSuccess')
+            formInputs[i].value = ''
+          }
+        }
+        setTimeout(() => {
+          document
+            .querySelector('.sk-form-cube-grid')
+            .classList.remove('hideFormSpinner')
+          document
+            .querySelector('.formSuccessBox')
+            .classList.remove('showFormSuccessBox')
+          document
+            .querySelector('.formSpinnerOverlay')
+            .classList.remove('showFormSpinner')
+        }, 2000)
+      } else {
+        document
+          .querySelector('.formSpinnerOverlay')
+          .classList.remove('showFormSpinner')
+      }
+    })
+    .catch((e) => console.dir(e))
+})
+
 const servicesGalleryFrame = document.querySelector('.servicesGalleryFrame')
 const overlayBody = document.querySelector('.servicesOverlay')
 const overlayCloseBtn = document.querySelector('.overlayCloseBtn')
@@ -114,37 +161,22 @@ servicesGalleryFrame.addEventListener('click', function (e) {
 if (isMobileDevice()) {
   document.querySelector('.spinnerBackground').remove()
   document.body.tabIndex = 0 // fix for IOS hover effect on tap
-  AOS.init({ disable: 'mobile' })
 } else {
   const content = document.querySelector('.loadingContentWrapper')
   const spinner = document.querySelector('.spinnerBackground')
   const body = document.querySelector('body')
 
   spinner.style.display = 'flex'
-  // body.style.overflowY = 'hidden'
   body.classList.add('blockBodyScroll')
   content.classList.add('hideContentWhileLoading')
 
   function contentReady() {
-    document.querySelector('#form').addEventListener('submit', (e) => {
-      e.preventDefault()
-      console.log(formValidation())
-    })
     spinner.style.display = 'none'
-    // body.style.overflowY = 'auto'
     body.classList.remove('blockBodyScroll')
     content.classList.remove('hideContentWhileLoading')
     content.classList.add('showContentWhenLoaded')
 
     initNavObserver()
-
-    AOS.init({
-      delay: 0, // values from 0 to 3000, with step 50ms
-      duration: 1500, // values from 0 to 3000, with step 50ms
-      once: true, // whether animation should happen only once - while scrolling down
-      anchorPlacement: 'bottom-bottom',
-      disable: 'mobile'
-    })
   }
   window.onload = contentReady
 }

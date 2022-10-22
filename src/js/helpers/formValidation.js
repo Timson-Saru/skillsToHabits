@@ -1,42 +1,54 @@
 function validate(htmlCollection) {
   const inputElement = htmlCollection.children[1]
+
   if (inputElement.classList.contains('validationFailed')) {
-    toggleErrorTooltip(htmlCollection, '')
+    setErrorTooltip(htmlCollection, '')
   }
-  if (inputElement.name === 'phone' || inputElement.name === 'name') {
+  if (inputElement.classList.contains('validationSuccess')) {
+    setSuccessTooltip(htmlCollection)
+  }
+  if (inputElement.name === 'customer_phone') {
     if (!inputElement.value) {
-      toggleErrorTooltip(
+      setErrorTooltip(
         htmlCollection,
         '<i class="formErrorIcon fas fa-exclamation-triangle"></i> Обязательное поле'
       )
       return false
     }
-  }
-  if (inputElement.name === 'mail' && inputElement.value) {
-    if (!isEmail(inputElement.value)) {
-      toggleErrorTooltip(
-        htmlCollection,
-        '<i class="formErrorIcon fas fa-exclamation-triangle"></i> Некорректная почта'
-      )
-      return false
-    }
-  }
-  if (inputElement.name === 'phone') {
     if (!isPhoneNumber(inputElement.value)) {
-      toggleErrorTooltip(
+      setErrorTooltip(
         htmlCollection,
         '<i class="formErrorIcon fas fa-exclamation-triangle"></i> Некорректный номер'
       )
       return false
     }
+    setSuccessTooltip(htmlCollection)
+  }
+  if (inputElement.name === 'customer_name') {
+    if (!inputElement.value) {
+      setErrorTooltip(
+        htmlCollection,
+        '<i class="formErrorIcon fas fa-exclamation-triangle"></i> Обязательное поле'
+      )
+      return false
+    }
+    setSuccessTooltip(htmlCollection)
+  }
+  if (inputElement.name === 'customer_email' && inputElement.value) {
+    if (!isEmail(inputElement.value)) {
+      setErrorTooltip(
+        htmlCollection,
+        '<i class="formErrorIcon fas fa-exclamation-triangle"></i> Некорректная почта'
+      )
+      return false
+    }
+    setSuccessTooltip(htmlCollection)
   }
   return true
 }
 
-export default function () {
-  const formBody = document.querySelector('.formBlockBody')
-  const inputCollection = formBody.firstElementChild.children
-
+export default function (htmlCollection) {
+  const inputCollection = htmlCollection.firstElementChild.children
   let validationArray = []
   for (let i = 0; i < inputCollection.length; i++) {
     validationArray[i] = validate(inputCollection[i])
@@ -57,10 +69,15 @@ function isPhoneNumber(phoneNumber) {
   )
 }
 
-function toggleErrorTooltip(htmlCollection, message = 'произошла ошибка') {
-  const inputErrorTooltip = htmlCollection.children[0]
-  const inputElement = htmlCollection.children[1]
+function setErrorTooltip(htmlCollection, message = 'произошла ошибка') {
+  const [inputTooltip, inputElement] = htmlCollection.children
 
-  inputErrorTooltip.innerHTML = message
+  inputTooltip.innerHTML = message
   inputElement.classList.toggle('validationFailed')
+}
+function setSuccessTooltip(htmlCollection) {
+  const [inputTooltip, inputElement] = htmlCollection.children
+
+  inputTooltip.innerHTML = ''
+  inputElement.classList.toggle('validationSuccess')
 }

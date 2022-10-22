@@ -24,6 +24,11 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
 
+  .servicesNavIcon {
+    font-size: 1.3rem;
+    margin-right: 10px;
+  }
+
   li {
     display: inline;
     margin-left: 70px;
@@ -33,7 +38,8 @@
 
 .nav-link:after {
   position: absolute;
-  content: "";
+  content: '';
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   height: 1px;
   width: 0;
@@ -52,12 +58,6 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-weight: 500;
-
-  // &:hover {
-  //   color: rgb(0, 0, 0);
-  //   -webkit-transition: 0.3s;
-  //   transition: 0.3s;
-  // }
 }
 
 @media (max-width: 770px) {
@@ -69,8 +69,6 @@
 //Navigation scrolled styles
 
 .nav-box-scrolled {
-  // -webkit-backdrop-filter: blur(5px);
-  // backdrop-filter: blur(5px);
   padding: 7px 0 7px 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -98,21 +96,34 @@
 }
 
 .jiggleLogoFrame {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
   display: flex;
   font-size: 1.6rem;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
+  cursor: pointer;
+}
+
+.navLogo {
+  text-decoration: none;
+  color: inherit;
 }
 
 .nav-logo-latter {
   font-family: oswald;
+  -webkit-transition: 0.05s !important;
   transition: 0.05s !important;
 }
 
 .nav-logo-latter-scrolled {
+  -webkit-transition: 0.3s !important;
   transition: 0.3s !important;
   color: white !important;
 }
 
 .preventLogoJiggle {
+  -webkit-transform: translateY(0px) !important;
   transform: translateY(0px) !important;
 }

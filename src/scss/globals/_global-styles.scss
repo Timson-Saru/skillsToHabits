@@ -3,6 +3,7 @@
 .animationOnloadDelay *,
 .animationOnloadDelay *:before,
 .animationOnloadDelay *:after {
+  -webkit-animation-play-state: paused !important;
   animation-play-state: paused !important;
 }
 
@@ -18,6 +19,8 @@ html {
 
 .mainActionButton {
   border: solid 1px transparent;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   text-align: center;
   background: rgb(0, 153, 255);
@@ -86,6 +89,10 @@ html {
   padding: 100px 0 100px 0;
 }
 
+.globalBlockMargins {
+  margin: 100px 0 100px 0;
+}
+
 .globalBlackColor {
   color: rgb(15, 15, 15);
 }
@@ -121,6 +128,10 @@ html {
 
   .globalBlockPaddings {
     padding: 50px 0 50px 0;
+  }
+
+  .globalBlockMargins {
+    margin: 50px 0 50px 0;
   }
 }
 
