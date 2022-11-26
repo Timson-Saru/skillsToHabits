@@ -76,6 +76,18 @@
     opacity: 1;
   }
 
+  .formErrorText {
+    color: red;
+  }
+
+  .formErrorBox {
+    display: none;
+  }
+
+  .showFormErrorBox {
+    display: block;
+  }
+
   .formSuccessBox {
     position: absolute;
     display: -webkit-box;

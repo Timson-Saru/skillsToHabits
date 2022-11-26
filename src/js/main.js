@@ -137,7 +137,27 @@ document.querySelector('#form').addEventListener('submit', (e) => {
           .classList.remove('showFormSpinner')
       }
     })
-    .catch((e) => console.dir(e))
+    .catch((e) => {
+      console.dir(`Status code: ${e.status}`)
+      document
+        .querySelector('.sk-form-cube-grid')
+        .classList.add('hideFormSpinner')
+      document.querySelector('.formErrorBox').classList.add('showFormErrorBox')
+      document.querySelector(
+        '.formErrorText'
+      ).innerText = `Произошла ошибка, код статуса: ${e.status}`
+      setTimeout(() => {
+        document
+          .querySelector('.sk-form-cube-grid')
+          .classList.remove('hideFormSpinner')
+        document
+          .querySelector('.formErrorBox')
+          .classList.remove('showFormErrorBox')
+        document
+          .querySelector('.formSpinnerOverlay')
+          .classList.remove('showFormSpinner')
+      }, 5000)
+    })
 })
 
 const servicesGalleryFrame = document.querySelector('.servicesGalleryFrame')

@@ -13,7 +13,6 @@
 
 .whyUsCard {
   max-width: 380px;
-
   text-align: center;
   display: -webkit-box;
   display: -webkit-flex;
@@ -45,6 +44,28 @@
 
   img {
     margin-bottom: 25px;
+  }
+}
+
+.whyUsBlock_contacts_box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+  a {
+    text-decoration: none;
   }
 }
 

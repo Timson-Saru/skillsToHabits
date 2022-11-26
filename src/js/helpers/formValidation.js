@@ -1,6 +1,6 @@
 function validate(htmlCollection) {
   const inputElement = htmlCollection.children[1]
-
+  console.log(typeof inputElement.value)
   if (inputElement.classList.contains('validationFailed')) {
     setErrorTooltip(htmlCollection, '')
   }

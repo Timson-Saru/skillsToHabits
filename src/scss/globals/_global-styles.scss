@@ -85,6 +85,14 @@ html {
   margin-right: auto;
 }
 
+.globbalPaddingTop {
+  padding-top: 100px;
+}
+
+.globbalPaddingBottom {
+  padding-bottom: 100px;
+}
+
 .globalBlockPaddings {
   padding: 100px 0 100px 0;
 }
@@ -128,6 +136,14 @@ html {
 
   .globalBlockPaddings {
     padding: 50px 0 50px 0;
+  }
+
+  .globbalPaddingTop {
+    padding-top: 50px;
+  }
+
+  .globbalPaddingBottom {
+    padding-bottom: 50px;
   }
 
   .globalBlockMargins {
