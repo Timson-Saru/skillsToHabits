@@ -216,63 +216,7 @@
   max-width: 1500px;
   .vsImageBox {
     border-radius: 4px;
-    max-width: 70%;
     background: floralwhite;
-  }
-  .vsTextBox {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -moz-box-pack: center;
-    justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -moz-box-orient: vertical;
-    -moz-box-direction: normal;
-    flex-direction: column;
-    width: 30%;
-    color: white;
-    background: black;
-    padding: 20px;
-    border: solid 1px white;
-    border-radius: 4px;
-    margin-left: -58px;
-    padding-left: 79px;
-    -webkit-clip-path: polygon(
-      11% 0,
-      9% 14%,
-      13% 26%,
-      9% 39%,
-      12% 57%,
-      11% 69%,
-      9% 82%,
-      10% 93%,
-      8% 100%,
-      100% 100%,
-      100% 0
-    );
-    clip-path: polygon(
-      11% 0,
-      9% 14%,
-      13% 26%,
-      9% 39%,
-      12% 57%,
-      11% 69%,
-      9% 82%,
-      10% 93%,
-      8% 100%,
-      100% 100%,
-      100% 0
-    );
-    p:first-child {
-      font-weight: 600;
-      font-size: 1.3rem;
-      margin-bottom: 15px;
-    }
   }
 }
 
@@ -301,63 +245,6 @@
     -webkit-justify-content: center;
     -moz-box-pack: center;
     justify-content: center;
-    .vsImageBox {
-      max-width: 80%;
-    }
-    .vsTextBox {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-box;
-      display: flex;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -moz-box-pack: center;
-      justify-content: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -moz-box-orient: vertical;
-      -moz-box-direction: normal;
-      flex-direction: column;
-      width: 80%;
-      color: white;
-      background: black;
-      margin-left: 0;
-      margin-top: -15px;
-      padding: 20px;
-      border: solid 1px white;
-      border-radius: 4px;
-
-      -webkit-clip-path: polygon(
-        0 0,
-        19% 2%,
-        39% 0,
-        57% 3%,
-        74% 0,
-        86% 2%,
-        100% 2%,
-        100% 100%,
-        0 100%
-      );
-
-      clip-path: polygon(
-        0 0,
-        19% 2%,
-        39% 0,
-        57% 3%,
-        74% 0,
-        86% 2%,
-        100% 2%,
-        100% 100%,
-        0 100%
-      );
-
-      p:first-child {
-        font-weight: 600;
-        font-size: 1.3rem;
-        margin-bottom: 15px;
-      }
-    }
   }
 }
 
