@@ -150,27 +150,6 @@
   overflow: hidden;
 }
 
-.vbHoverOverlay {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.925);
-  padding: 20px;
-  width: 100%;
-  bottom: 0;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  -webkit-transform: translateY(90px);
-  transform: translateY(90px);
-}
-
-.vbHoverOverlay p:first-child {
-  font-weight: 600;
-}
-
-.vbHoverOverlay p:last-child {
-  font-weight: 400;
-  color: rgb(182, 182, 182);
-}
-
 .servicesOverlay {
   background: rgba(0, 0, 0, 0.836);
   position: fixed;
@@ -282,13 +261,6 @@
   transition: 0.3s;
   -webkit-transform: translateY(-5px) translateX(-5px);
   transform: translateY(-5px) translateX(-5px);
-
-  .vbHoverOverlay {
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
 }
 .graphicEscort {
   margin: 0 auto;
